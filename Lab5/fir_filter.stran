@@ -1,0 +1,44 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work.tb_fir_filter 
+# Start time: 10:37:50 on Mar 04,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading source_work.tb_fir_filter
+# Refreshing /home/ecegrid/a/mg147/ece337/Lab5/source_work.fir_filter
+# Loading source_work.fir_filter
+# Loading source_work.sync
+# Loading source_work.controller
+# Refreshing /home/ecegrid/a/mg147/ece337/Lab5/source_work.counter
+# Loading source_work.counter
+# Loading source_work.flex_counter
+# Refreshing /home/ecegrid/a/mg147/ece337/Lab5/source_work.magnitude
+# Loading source_work.magnitude
+# Loading /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim.datapath
+# Loading /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim.datapath_decode
+# Loading /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim.alu
+# Loading /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim.register_file
+# Loading /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim.flex_sreg
+# ** Warning: (vsim-3017) source/counter.sv(20): [TFMPC] - Too few port connections. Expected 7, found 6.
+#         Region: /tb_fir_filter/DUT/cnt/COUNT
+# ** Warning: (vsim-3722) source/counter.sv(20): [TFMPC] - Missing connection for port 'count_out'.
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab5/source/fir_filter.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 10:38:08 on Mar 04,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab5/source/fir_filter.sv 
+# -- Compiling module fir_filter
+# 
+# Top level modules:
+# 	fir_filter
+# End time: 10:38:09 on Mar 04,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 10:38:17 on Mar 04,2016, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 3

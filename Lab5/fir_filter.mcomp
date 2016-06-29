@@ -1,0 +1,41 @@
+QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+Start time: 10:05:53 on Feb 26,2016
+vlog -sv -work mapped_work mapped/fir_filter.v 
+-- Compiling module sync_1
+-- Compiling module sync_0
+-- Compiling module controller
+-- Compiling module flex_counter_NUM_CNT_BITS10_DW01_inc_0
+-- Compiling module flex_counter_NUM_CNT_BITS10_DW01_inc_1
+-- Compiling module flex_counter_NUM_CNT_BITS10
+-- Compiling module counter
+-- Compiling module magnitude_DW01_inc_0
+-- Compiling module magnitude
+-- Compiling module datapath_decode
+-- Compiling module alu_DW01_add_1
+-- Compiling module alu_DW_mult_uns_2
+-- Compiling module alu_DW01_sub_2
+-- Compiling module alu
+-- Compiling module flex_sreg_NUM_BITS17_15
+-- Compiling module flex_sreg_NUM_BITS17_14
+-- Compiling module flex_sreg_NUM_BITS17_13
+-- Compiling module flex_sreg_NUM_BITS17_12
+-- Compiling module flex_sreg_NUM_BITS17_11
+-- Compiling module flex_sreg_NUM_BITS17_10
+-- Compiling module flex_sreg_NUM_BITS17_9
+-- Compiling module flex_sreg_NUM_BITS17_8
+-- Compiling module flex_sreg_NUM_BITS17_7
+-- Compiling module flex_sreg_NUM_BITS17_6
+-- Compiling module flex_sreg_NUM_BITS17_5
+-- Compiling module flex_sreg_NUM_BITS17_4
+-- Compiling module flex_sreg_NUM_BITS17_3
+-- Compiling module flex_sreg_NUM_BITS17_2
+-- Compiling module flex_sreg_NUM_BITS17_1
+-- Compiling module flex_sreg_NUM_BITS17_0
+-- Compiling module register_file
+-- Compiling module datapath
+-- Compiling module fir_filter
+
+Top level modules:
+	fir_filter
+End time: 10:05:54 on Feb 26,2016, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
