@@ -1,0 +1,194 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg147/ece337/Lab5
+vcontroller
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 <=:`z[75]odJTl`Hnaz260
+IBn0;knmbMg<A]TG29^I=L1
+!s105 controller_sv_unit
+S1
+R0
+w1456501500
+8source/controller.sv
+Fsource/controller.sv
+L0 7
+Z3 OL;L;10.3b;59
+!s108 1456501537.096288
+!s107 source/controller.sv|
+!s90 -sv|-work|source_work|source/controller.sv|
+!i113 0
+Z4 o-sv -work source_work
+Z5 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vcounter
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 4b5mWE2J28A7SV]=9BVY?0
+IA82ZPLf``lbIJE;:E[0N]0
+!s105 counter_sv_unit
+S1
+R0
+w1457105725
+8source/counter.sv
+Fsource/counter.sv
+L0 9
+R3
+!s108 1457105867.434135
+!s107 source/counter.sv|
+!s90 -sv|-work|source_work|source/counter.sv|
+!i113 0
+R4
+R5
+vfir_filter
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Yj]`UaUH[<S0AV85VFcE=1
+IHAAMmTaA67TXQ4:h7CCHU3
+!s105 fir_filter_sv_unit
+S1
+R0
+w1457105853
+8source/fir_filter.sv
+Fsource/fir_filter.sv
+L0 1
+R3
+!s108 1457105867.321221
+!s107 source/fir_filter.sv|
+!s90 -sv|-work|source_work|source/fir_filter.sv|
+!i113 0
+R4
+R5
+vflex_counter
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 NCT2_HPZBAG86@UF^]h8I2
+IgA_Ym>JPji@AzVmhc7jmb3
+!s105 flex_counter_sv_unit
+S1
+R0
+w1456499677
+8source/flex_counter.sv
+Fsource/flex_counter.sv
+L0 10
+R3
+!s108 1456499871.807031
+!s107 source/flex_counter.sv|
+!s90 -sv|-work|source_work|source/flex_counter.sv|
+!i113 0
+R4
+R5
+vmagnitude
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 =e<VEe`oK@i]dR=H2X4YV0
+IeTecRAkj?<_HQ5827BMMm0
+!s105 magnitude_sv_unit
+S1
+R0
+w1457105736
+8source/magnitude.sv
+Fsource/magnitude.sv
+L0 7
+R3
+!s108 1457105867.512679
+!s107 source/magnitude.sv|
+!s90 -sv|-work|source_work|source/magnitude.sv|
+!i113 0
+R4
+R5
+vsync
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 RSzY3BCRfNY1HbZ^cE[5I3
+I:@ZDOh0TnnYnWQP?Q1A:G1
+!s105 sync_sv_unit
+S1
+R0
+w1456499616
+8source/sync.sv
+Fsource/sync.sv
+L0 9
+R3
+!s108 1456499873.118501
+!s107 source/sync.sv|
+!s90 -sv|-work|source_work|source/sync.sv|
+!i113 0
+R4
+R5
+vtb_fir_filter
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 RzLlJVd?NdCQcOW?AdbhG1
+IBZ1b5I>e9SJ78KI=[3m@K3
+!s105 tb_fir_filter_sv_unit
+S1
+R0
+Z6 w1455758859
+8source/tb_fir_filter.sv
+Fsource/tb_fir_filter.sv
+Z7 L0 11
+R3
+!s108 1455860466.101193
+!s107 source/tb_fir_filter.sv|
+!s90 -sv|-work|source_work|source/tb_fir_filter.sv|
+!i113 0
+R4
+R5
+vtb_fir_image
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 NOkLQdzog10YUB^ZdDL:K2
+I<meYRDOlNIUD51:VjDQUo2
+!s105 tb_fir_image_sv_unit
+S1
+R0
+R6
+8source/tb_fir_image.sv
+Fsource/tb_fir_image.sv
+R7
+R3
+!s108 1456507037.856621
+!s107 source/tb_fir_image.sv|
+!s90 -sv|-work|source_work|source/tb_fir_image.sv|
+!i113 0
+R4
+R5

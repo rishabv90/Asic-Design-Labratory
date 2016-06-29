@@ -1,0 +1,205 @@
+module fir_filter
+(
+input  wire clk,
+input  wire n_reset,
+input  wire [15:0] sample_data,
+input  wire [15:0] fir_coefficient,
+input  wire data_ready,
+input  wire load_coeff,
+output wire one_k_samples,
+output wire modwait,
+output wire [15:0] fir_out,
+output wire err
+);
+ logic [2:0] 	      operation;
+   logic [3:0] 	      source1;
+   logic [3:0] 	      source2;
+   logic [3:0] 	      destination;
+   logic 	      count_up;
+   logic 	      clear;
+   logic [16:0]       dpout;
+   logic 	      overflow;
+   
+   logic 	      syncDR;
+   logic 	      syncLC;  
+
+
+   sync syn1 (
+	      .clk(clk),
+	      .n_rst(n_reset),
+	      .async_in(data_ready),
+	      .sync_out(syncDR)
+	      );
+
+   sync syn2 (
+	      .clk(clk),
+	      .n_rst(n_reset),
+	      .async_in(load_coeff),
+	      .sync_out(syncLC)
+	      );
+   
+   
+   controller ctlr (
+		    .clk(clk),
+		    .n_reset(n_reset),
+		    .dr(syncDR),
+		    .lc(syncLC),
+		    .overflow(overflow),
+		    .cnt_up(count_up),
+		    .clear(clear),
+		    .modwait(modwait),
+		    .op(operation),
+		    .src1(source1),
+		    .src2(source2),
+		    .dest(destination),
+		    .err(err)
+		    );
+
+   counter cnt (
+		.clk(clk),
+		.n_reset(n_reset),
+		.cnt_up(count_up),
+		.clear(clear),
+		.one_k_samples(one_k_samples)
+		);
+   
+   magnitude mag (
+		  .in(dpout),
+		  .out(fir_out)
+		  );
+
+   datapath dp (
+		.clk(clk),
+		.n_reset(n_reset),
+		.op(operation),
+		.src1(source1),
+		.src2(source2),
+		.dest(destination),
+		.ext_data1(sample_data),
+		.ext_data2(fir_coefficient),
+		.outreg_data(dpout),
+		.overflow(overflow)
+		);
+   
+   
+endmodule
+/*
+//make function call here
+logic count_up;
+logic clear;
+logic [16:0] dpout;
+logic [2:0] operation;
+logic [3:0] source1;
+logic [3:0] source2;
+logic [3:0] destination;
+logic overflow;
+logic syncdr;
+logic synclc;   
+
+sync syn1 (
+	   .clk(clk),
+	   .n_rst(n_reset),
+	   .async_in(data_ready),
+	   .sync_out(syncdr)
+	   );
+
+sync syn2 (
+	   .clk(clk),
+	   .n_rst(n_reset),
+	   .async_in(load_coeff),
+	   .sync_out(synclc)
+	   );
+   
+   
+controller ctlr (
+		 .clk(clk),
+		 .n_reset(n_reset),
+		 .dr(syncdr),
+		 .lc(synclc),
+		 .overflow(overflow),
+		 .cnt_up(count_up),
+		 .clear(clear),
+		 .modwait(modwait),
+		 .op(operation),
+		 .src1(source1),
+		 .src2(source2),
+		 .dest(destination),
+		 .err(err)
+		);
+
+counter cnt (
+		.clk(clk),
+		.n_reset(n_reset),
+		.cnt_up(count_up),
+		.clear(clear),
+		.one_k_samples(one_k_samples)
+		);
+   
+magnitude mag (
+		  .in(dpout),
+		  .out(fir_out)
+		  );
+
+datapath dp (
+		.clk(clk),
+		.n_reset(n_reset),
+		.op(operation),
+		.src1(source1),
+		.src2(source2),
+		.dest(destination),
+		.ext_data1(sample_data),
+		.ext_data2(fir_coefficient),
+		.outreg_data(dpout),
+		.overflow(overflow)
+		);
+   
+
+endmodule   */
+
+/*
+endmodule
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+
+*/
+
+
+
