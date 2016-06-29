@@ -1,0 +1,205 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:02:54 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(24): near "not": syntax error, unexpected not
+# ** Error: source/comparator.sv(27): near "assign": syntax error, unexpected assign
+# ** Error: source/comparator.sv(29): near "not": syntax error, unexpected not
+# ** Error: source/comparator.sv(31): (vlog-2730) Undefined variable: 'LT'.
+# ** Error: source/comparator.sv(32): (vlog-2730) Undefined variable: 'EQ'.
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(37): near "else": syntax error, unexpected else
+# ** Warning: source/comparator.sv(42): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(42): (vlog-2284) Empty $unit scope found.
+# End time: 13:02:54 on Jan 18,2016, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:05:47 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(27): near "assign": syntax error, unexpected assign
+# ** Error: source/comparator.sv(29): near "not": syntax error, unexpected not
+# ** Error: source/comparator.sv(31): (vlog-2730) Undefined variable: 'LT'.
+# ** Error: source/comparator.sv(32): (vlog-2730) Undefined variable: 'EQ'.
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(37): near "else": syntax error, unexpected else
+# ** Warning: source/comparator.sv(42): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(43): (vlog-2284) Empty $unit scope found.
+# End time: 13:05:48 on Jan 18,2016, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:06:20 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(27): near "gte": syntax error, unexpected IDENTIFIER
+# ** Error: source/comparator.sv(29): near "not": syntax error, unexpected not
+# ** Error: source/comparator.sv(31): (vlog-2730) Undefined variable: 'LT'.
+# ** Error: source/comparator.sv(32): (vlog-2730) Undefined variable: 'EQ'.
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(37): near "else": syntax error, unexpected else
+# ** Warning: source/comparator.sv(42): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(43): (vlog-2284) Empty $unit scope found.
+# End time: 13:06:20 on Jan 18,2016, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:06:49 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(27): near "assign": syntax error, unexpected assign
+# ** Error: source/comparator.sv(30): (vlog-2730) Undefined variable: 'GT'.
+# ** Error: source/comparator.sv(31): (vlog-2730) Undefined variable: 'LT'.
+# ** Error: source/comparator.sv(31): near "==": syntax error, unexpected ==
+# ** Error: source/comparator.sv(32): (vlog-2730) Undefined variable: 'EQ'.
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(37): near "else": syntax error, unexpected else
+# ** Warning: source/comparator.sv(42): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(43): (vlog-2284) Empty $unit scope found.
+# End time: 13:06:49 on Jan 18,2016, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:07:30 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(27): near "assign": syntax error, unexpected assign
+# ** Error: source/comparator.sv(31): near "==": syntax error, unexpected ==
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(37): near "else": syntax error, unexpected else
+# ** Warning: source/comparator.sv(42): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(43): (vlog-2284) Empty $unit scope found.
+# End time: 13:07:31 on Jan 18,2016, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:09:14 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(27): near "assign": syntax error, unexpected assign
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(38): near "else": syntax error, unexpected else
+# End time: 13:09:14 on Jan 18,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:12:35 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(27): near "assign": syntax error, unexpected assign
+# ** Error: source/comparator.sv(33): near "else": syntax error, unexpected else
+# ** Error: source/comparator.sv(38): near "else": syntax error, unexpected else
+# ** Warning: source/comparator.sv(43): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(44): (vlog-2284) Empty $unit scope found.
+# End time: 13:12:36 on Jan 18,2016, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:14:06 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(29): near "assign": syntax error, unexpected assign
+# ** Warning: source/comparator.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(53): (vlog-2284) Empty $unit scope found.
+# End time: 13:14:07 on Jan 18,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:14:49 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(29): near "gte": syntax error, unexpected IDENTIFIER
+# ** Warning: source/comparator.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(53): (vlog-2284) Empty $unit scope found.
+# End time: 13:14:50 on Jan 18,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:15:10 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Error: source/comparator.sv(29): near "gt": syntax error, unexpected IDENTIFIER
+# ** Warning: source/comparator.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(53): (vlog-2284) Empty $unit scope found.
+# End time: 13:15:10 on Jan 18,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:15:27 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# ** Warning: source/comparator.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: source/comparator.sv(53): (vlog-2284) Empty $unit scope found.
+# 
+# Top level modules:
+# 	comparator
+# End time: 13:15:28 on Jan 18,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+vlog source/comparator.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 13:23:51 on Jan 18,2016
+# vlog -reportprogress 300 source/comparator.sv 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 13:23:51 on Jan 18,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -i work.comparator
+# vsim -i 
+# Start time: 13:25:38 on Jan 18,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.comparator(fast)
+add wave*
+# ** Error: bad option "wave*": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
+add wave *
+# (vish-4014) No objects found matching '*'.
+vsim work.comparator
+# vsim 
+# Start time: 13:27:07 on Jan 18,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.comparator(fast)
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.comparator(fast)
+# Load canceled
+# End time: 13:28:38 on Jan 18,2016, Elapsed time: 0:01:31
+# Errors: 1, Warnings: 0

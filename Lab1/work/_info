@@ -1,0 +1,64 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg147/ece337/Lab1
+T_opt
+!s110 1453141539
+VA^XckGg`<OlcP5jgXX2jj2
+04 10 4 work comparator fast 0
+=1-3417eba0a71c-569d2e22-c0476-1a12
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.3b;59
+vcomparator
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1453141431
+!i10b 1
+!s100 1aiShoBA;TmCOE7HT<UZU1
+I6il6UVFRKC64NddS6^LdF3
+V`JN@9S9cnhjKRR_L]QIcM3
+!s105 comparator_sv_unit
+S1
+R0
+w1453141427
+Z2 8source/comparator.sv
+Z3 Fsource/comparator.sv
+L0 11
+Z4 OL;L;10.3b;59
+r1
+!s85 0
+31
+!s108 1453141431.072230
+Z5 !s107 source/comparator.sv|
+Z6 !s90 -reportprogress|300|source/comparator.sv|
+!i113 0
+Z7 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+Xcomparator_sv_unit
+R1
+!s110 1453140927
+!i10b 1
+!s100 >3A6AmRKmL;CLNen`PdgL2
+II7;b=6I_];@2Ua13`ma2Q1
+VI7;b=6I_];@2Ua13`ma2Q1
+!i103 1
+S1
+R0
+w1453140925
+R2
+R3
+L0 52
+R4
+r1
+!s85 0
+31
+!s108 1453140927.881094
+R5
+R6
+!i113 0
+R7
