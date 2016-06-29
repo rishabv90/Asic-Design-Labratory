@@ -1,0 +1,1347 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib
+valu
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]=4UD4UeXUomNClYonj3E2
+I852eYFeL8Si<GW=:AzPKW0
+!s105 alu_sv_unit
+S1
+R0
+Z3 w1442982492
+8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/alu.sv
+F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/alu.sv
+L0 9
+Z4 OL;L;10.3b;59
+Z5 !s108 1448389240.462401
+Z6 !s107 /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/register_file.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/flex_sreg.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath_decode.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/alu.sv|
+Z7 !s90 -sv|-work|/home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/alu.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath_decode.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/flex_sreg.sv|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/register_file.sv|
+!i113 0
+Z8 o-sv -work /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim
+Z9 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vdatapath
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 gc[=7XhWYOGeJSL9j^dD90
+IW_TJ4>>]MQQ4DI[bhlWbD2
+!s105 datapath_sv_unit
+S1
+R0
+R3
+8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath.sv
+F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath.sv
+L0 9
+R4
+R5
+R6
+R7
+!i113 0
+R8
+R9
+vdatapath_decode
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 SbJX9cRL=l4<KHa7PFgOf3
+IZ[JVVZ]3e8WCbUbgP`Va62
+!s105 datapath_decode_sv_unit
+S1
+R0
+R3
+8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath_decode.sv
+F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/datapath_decode.sv
+L0 9
+R4
+R5
+R6
+R7
+!i113 0
+R8
+R9
+Efifo
+Z10 w1443505830
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z13 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fifo.vhd
+Z14 F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fifo.vhd
+l0
+L17
+V[GcSdUQ7Z<Wi;1f1bcXe33
+!s100 9gA5U2n=5iH;;=__aj4zc1
+Z15 OL;C;10.3b;59
+31
+Z16 !s110 1448389256
+!i10b 1
+Z17 !s108 1448389256.092725
+Z18 !s90 -work|/home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fiforam.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fifo.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_encoder.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_out_ctrl.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tcu.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_timer.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tx_fifo.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tx_sr.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_usb_transmitter.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/read_fifo_ctrl.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/read_ptr.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/scalable_off_chip_sram.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/simple_scale_mem.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/write_fifo_ctrl.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/write_ptr.vhd|
+Z19 !s107 /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/write_ptr.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/write_fifo_ctrl.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/simple_scale_mem.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/scalable_off_chip_sram.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/read_ptr.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/read_fifo_ctrl.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_usb_transmitter.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tx_sr.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tx_fifo.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_timer.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tcu.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_out_ctrl.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_encoder.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fifo.vhd|/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fiforam.vhd|
+!i113 0
+Z20 o-work /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim
+Z21 tExplicit 1 Coverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+Artl
+R11
+R12
+DEx4 work 4 fifo 0 22 [GcSdUQ7Z<Wi;1f1bcXe33
+31
+R16
+l77
+L31
+V=mJH86i7UJ]Y_9Rcbl41;0
+!s100 mF@2BC3PP@U0]8f6T80MV1
+R15
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Efiforam
+R10
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z23 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R11
+R12
+R0
+Z24 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fiforam.vhd
+Z25 F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/fiforam.vhd
+l0
+L19
+V;4Sa:QZThdES]YU:Um5_;3
+!s100 TWT31F@hz>eN1KI6a=joW3
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Artl
+R22
+R23
+R11
+R12
+DEx4 work 7 fiforam 0 22 ;4Sa:QZThdES]YU:Um5_;3
+31
+R16
+l34
+L30
+VJLeI?DBz]Nh1A?XRA`H2R2
+!s100 YzhNVgcS6OoK_n6R[ZX8b2
+R15
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+vflex_sreg
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 S6lO>6>4Ji34MaJ4l<PAh1
+IM8?o26_Fhn1dH9nJfY_Qe3
+!s105 flex_sreg_sv_unit
+S1
+R0
+R3
+8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/flex_sreg.sv
+F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/flex_sreg.sv
+L0 9
+R4
+R5
+R6
+R7
+!i113 0
+R8
+R9
+Elab7_encoder
+Z26 w1445281360
+R11
+R12
+R0
+Z27 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_encoder.vhd
+Z28 F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_encoder.vhd
+l0
+L13
+VDEd>@m>]Ig9Bj;R7Mi@]P0
+!s100 g3=0VUX?bnU?e9XF<CZgG1
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Asimple_arch
+R11
+R12
+DEx4 work 12 lab7_encoder 0 22 DEd>@m>]Ig9Bj;R7Mi@]P0
+l29
+L24
+V]IzmLUG;HlCKnmKaA7^zo1
+!s100 1kDVoH^HCE@3gkfem_U9@0
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Elab7_out_ctrl
+R26
+R11
+R12
+R0
+Z29 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_out_ctrl.vhd
+Z30 F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_out_ctrl.vhd
+l0
+L13
+VX[6bm8;AikcdnEi4HDC`O1
+!s100 I`AP@4:WEL[hz4B>ZQ`7:0
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Asimple_arch
+R11
+R12
+DEx4 work 13 lab7_out_ctrl 0 22 X[6bm8;AikcdnEi4HDC`O1
+l36
+L25
+VCXz[Leh:eBVn7MbFXQP8c2
+!s100 JPdXP_F1z?T2:i;KdSkCU3
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Elab7_tcu
+R26
+R11
+R12
+R0
+Z31 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tcu.vhd
+Z32 F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tcu.vhd
+l0
+L13
+V?DTSJj32[I`AmPkmlY9[03
+!s100 olCAjEUVBmP9>>[;Me;Ad0
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Amain_arch
+R11
+R12
+DEx4 work 8 lab7_tcu 0 22 ?DTSJj32[I`AmPkmlY9[03
+l48
+L33
+V1Fnch@8aZSCD<YM;2EQmJ3
+!s100 Jf6g9c=`>c;AiZ97mHcoS3
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Elab7_timer
+R26
+R11
+R12
+R0
+Z33 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_timer.vhd
+Z34 F/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_timer.vhd
+l0
+L13
+VMic]iI7C`>Pa@F<`dYA:P3
+!s100 g:J9bIj`gKBa_4czgf[o_1
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Amain_arch
+R11
+R12
+DEx4 work 10 lab7_timer 0 22 Mic]iI7C`>Pa@F<`dYA:P3
+l34
+L25
+V:`4C6KdeIN?GFXOG3XBz?2
+!s100 i1DVXYQ3ZgdY@GVCD6>k@0
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Elab7_tx_fifo
+R26
+R11
+R12
+R0
+Z35 8/home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/lab7_tx_fifo.vhd
+Z36 m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05
+Eand2x1
+Z1 w1449204033
+Z2 DPx4 work 4 prim 0 22 d[D8<WBBM4JNK=dg4MPP20
+Z3 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8/home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl
+Z8 F/home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl
+l0
+L97
+VW:j4<<MkYAQFO[dHJNgek0
+!s100 ilD09zV0lSh^L?=77OnMV2
+Z9 OL;C;10.3b;59
+31
+Z10 !s110 1449204180
+!i10b 1
+Z11 !s108 1449204179.395913
+Z12 !s90 -work|vhdl_work|/home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl|
+Z13 !s107 /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl|
+!i113 0
+Z14 o-work vhdl_work
+Z15 tExplicit 1 Coverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 and2x1 0 22 W:j4<<MkYAQFO[dHJNgek0
+31
+R10
+l122
+L116
+V64PZ9bAkFSS^B>g9R9bCY2
+!s100 ^f9iFb6H7H@ZD2o4:7>Ve3
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eand2x2
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L175
+VNUlKTZGDhjiGzhNU8g0d>1
+!s100 ;3=3Jm2R@k?mWOz@lbDMa0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 and2x2 0 22 NUlKTZGDhjiGzhNU8g0d>1
+31
+R10
+l200
+L194
+V^8_:4f`5iK4^zThFfa57z1
+!s100 eQcN?4JbU7Z`ahG_`KK`l3
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eaoi21x1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L253
+V[l?ZKdl7WEdKmaQ`e02z[0
+!s100 KgQMna7?R1GACF_YibJ7B3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 aoi21x1 0 22 [l?ZKdl7WEdKmaQ`e02z[0
+31
+R10
+l282
+L275
+VmTA8l_n2SHj8:3[a_19ZX3
+!s100 ?g4EElThA3lb4zZbPCzIL1
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eaoi22x1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L343
+V]>0ZUK99DcR7hN10LLd^V3
+!s100 9`4eO<Hgz_bH:6eQMznaU1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 aoi22x1 0 22 ]>0ZUK99DcR7hN10LLd^V3
+31
+R10
+l376
+L368
+VnIoY4m_BRWNzn5LfDAkQ81
+!s100 Z`22dilPd7lgAzddcI@^[2
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ebufx2
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L443
+V]1D;L]BUXaBfY[IF6><0z2
+!s100 SaY04BPdC`;=KB_>DUgJA0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 bufx2 0 22 ]1D;L]BUXaBfY[IF6><0z2
+31
+R10
+l464
+L459
+V3JGzH7hzVFmYYN6X<OXcP2
+!s100 lA33^b@<^89C?Pb]lIR@@2
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ebufx4
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L513
+VBNG2@9gU_:3AGCQHSHh^z1
+!s100 C1D9iA=W<G:bCNE?VX1mn1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 bufx4 0 22 BNG2@9gU_:3AGCQHSHh^z1
+31
+R10
+l534
+L529
+Vjl;5^:<J3@;mP1V;ohdbb2
+!s100 =ZMEASDb@N;gbB2HVa3hR0
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eclkbuf1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L583
+Vb3G`^cMgn8B:en<dlIULV1
+!s100 E>1jf7Ib1gLHLjf8P<4HT1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 clkbuf1 0 22 b3G`^cMgn8B:en<dlIULV1
+l604
+L599
+VLhdRlfF^T?b98L`1FDW981
+!s100 _KS=8BN9856lbJYGmT5Vm3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eclkbuf2
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L653
+V?@CKM1bZedIbH>T9N:WaG1
+!s100 [:;h;n15b7`EhjgLaDZ`Y1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 clkbuf2 0 22 ?@CKM1bZedIbH>T9N:WaG1
+l674
+L669
+Vb9hieIg]Omgd6@Al4ACLE2
+!s100 hOA6jFC<gd_Rk9^g6Nl7a0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eclkbuf3
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L723
+V[VE?4Wb2ElkK`G]5^f];Q1
+!s100 W_S;T6zD6CS3J2k8g`8?12
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 clkbuf3 0 22 [VE?4Wb2ElkK`G]5^f];Q1
+l744
+L739
+VdTgYMDKznkBlb5CQKh1h]3
+!s100 6GJ@OTei@3Ca0VhQj[h2I3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffnegx1
+R1
+Z16 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R5
+R6
+R0
+R7
+R8
+l0
+L791
+V:QKAlJ9lUjZ1o4AaAE3kU0
+!s100 ;bIL6bGoWGVo6YaZSOl3?2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ametastabilitywrapperarch
+R16
+R5
+R6
+DEx4 work 8 dffnegx1 0 22 :QKAlJ9lUjZ1o4AaAE3kU0
+l834
+L800
+VPY>Baani0PlbNkDc3ihLI2
+!s100 h6HacA5bo=cC2=ab2:TTM2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffnegx1_core
+R1
+R16
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L953
+Vjl1UOW9[I4Ef7LMkH_V[J3
+!s100 DdRk63VRbE6]MjgP8SkGG0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R16
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 dffnegx1_core 0 22 jl1UOW9[I4Ef7LMkH_V[J3
+l988
+L980
+VP0UNYTk]XX_UhZ`c6O>hB2
+!s100 1n@il]T8n;5dkUbe__Sfo2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffposx1
+R1
+R16
+R5
+R6
+R0
+R7
+R8
+l0
+L1104
+VJOaHn2<T[DAZ69ajNl>jY3
+!s100 D]nD=W?3:QmK3JgV5oFTP3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ametastabilitywrapperarch
+R16
+R5
+R6
+DEx4 work 8 dffposx1 0 22 JOaHn2<T[DAZ69ajNl>jY3
+31
+R10
+l1148
+L1113
+V<ML<m1P9<5U3IImFN?G]L3
+!s100 ^S[bMOcTa=1D6h5Em^Ld@1
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffposx1_core
+R1
+R16
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L1266
+V;:o=mokD<eR><f1^a2YBb1
+!s100 B27[d4FIKOh0T5Z2:NCFM0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R16
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 dffposx1_core 0 22 ;:o=mokD<eR><f1^a2YBb1
+31
+R10
+l1301
+L1293
+VSIggCFeT9>VHldNPHN@O50
+!s100 hjM=TEAYZ8JARUMSDS7Vi0
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffsr
+R1
+R16
+R5
+R6
+R0
+R7
+R8
+l0
+L1416
+VnYYzF>T75=9DCY9AOebA?3
+!s100 iDYZlL]AEnDA>;_8lF`a]1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ametastabilitywrapperarch
+R16
+R5
+R6
+DEx4 work 5 dffsr 0 22 nYYzF>T75=9DCY9AOebA?3
+31
+R10
+l1464
+L1427
+VOEQP6LlSLQUANS>]=Lc::0
+!s100 1Tjn[o4Bc06a;Nz_IQT@d1
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffsr_core
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L1584
+VzZO2MZklNdT15N=S9<2Zj3
+!s100 [>LWgi[S8@5D==6o7TAg=1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 dffsr_core 0 22 zZO2MZklNdT15N=S9<2Zj3
+31
+R10
+l1641
+L1629
+V9DBbjO612m[:aKL`?o4NO0
+!s100 Fk4`7B=J9d59eml@]ea<k2
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Efax1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L1900
+Vnae0^_UU?XWd2848WIR8N1
+!s100 Q=^amehnbL85<EkQBeC4S3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 fax1 0 22 nae0^_UU?XWd2848WIR8N1
+31
+R10
+l1933
+L1926
+VEn8Di?=8akMmm`okel6nd0
+!s100 H8<FI=BoIKdGEenD7XYn^2
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ehax1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L2024
+VU9L658G_1o:dDXm[adPdN3
+!s100 27TAzCK4PPn6B`20MbW9l0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 hax1 0 22 U9L658G_1o:dDXm[adPdN3
+31
+R10
+l2052
+L2046
+VE`=l_3fY1QA_5CISg;9mK0
+!s100 4gKKHPaDh>NC9fJWi12]H0
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Einvx1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L2126
+Vd6YYRElZB8?C0d6FRGOHB0
+!s100 P`L0b:L`>]5SFa7D94_CG1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 invx1 0 22 d6YYRElZB8?C0d6FRGOHB0
+31
+R10
+l2147
+L2142
+VL;bzoSl?SRN>_Me9^K`Dm1
+!s100 ^>ZT5mIIT<g2k4h2zgkbo0
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Einvx2
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L2196
+VmYoCW<fUjBmmC^_K>Z0mS2
+!s100 MzaCKSlOGO[][A;l:D3iA1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 invx2 0 22 mYoCW<fUjBmmC^_K>Z0mS2
+31
+R10
+l2217
+L2212
+VOoS:KgoJ96;m;;dYJAk5U2
+!s100 Zf]P0==3^@h6a7i<on[X93
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Einvx4
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L2266
+V;d:BGSSJ:;2meK;zVle7n1
+!s100 N6RDUb?_HDJo^9AZoAec52
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 invx4 0 22 ;d:BGSSJ:;2meK;zVle7n1
+31
+R10
+l2287
+L2282
+VX2FNPQ:gA=_lzgQI5KbdR3
+!s100 EMKobbXgEUKZzemo^=[?C1
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Einvx8
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L2336
+VkYB[WUOMM[RF2KX8e2m5<3
+!s100 RTKG<?M`4U>@<IW]K:=T?1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 invx8 0 22 kYB[WUOMM[RF2KX8e2m5<3
+31
+R10
+l2357
+L2352
+V;k7>f]9hXQ@3LeOZLm5l>0
+!s100 PGj2=cgNl5Tjd@fQJ]S>@1
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Elatch
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L2406
+VeLjJg:G:XDX@ofM70N?cG1
+!s100 k;HZ8nDP8>@EX0WkSoeeg2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 latch 0 22 eLjJg:G:XDX@ofM70N?cG1
+31
+R10
+l2441
+L2433
+VjW8cJ56IHQ?VYjD?a0LbG1
+!s100 j88QNIS54MiFm4IIM2Fa^3
+R9
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Emux2x1
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7

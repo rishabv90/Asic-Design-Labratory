@@ -1,0 +1,244 @@
+// $ID: $
+// File name: $  
+// Created:     $
+// Author:     Rishab Verma $
+// Lab Section: $
+// Version:     $
+// Description: $
+
+
+`timescale 1ns / 100ps
+
+module tb_adder_16bit
+();
+  wire	[15:0]tb_a;
+	wire	[15:0]tb_b;
+	wire	tb_carry_in;
+	wire	[15:0]tb_sum;
+	wire	tb_carry_out;
+
+  // Declare test bench signals
+	integer tb_test_case;
+ 	reg [32:0] tb_test_inputs;
+	reg [32:0] tb_expected_outputs;
+	
+	localparam NUM_INPUT_BITS			= 16;
+	localparam NUM_OUTPUT_BITS		= NUM_INPUT_BITS + 1;
+	localparam MAX_OUTPUT_BIT			= NUM_OUTPUT_BITS - 1;
+	localparam NUM_TEST_BITS 			= (NUM_INPUT_BITS * 2) + 1;
+	localparam MAX_TEST_BIT				= NUM_TEST_BITS - 1;
+	localparam NUM_TEST_CASES 		= 2 ** NUM_TEST_BITS;
+	localparam MAX_TEST_VALUE 		= NUM_TEST_CASES - 1;
+	localparam TEST_A_BIT					= 0;
+	localparam TEST_B_BIT					= NUM_INPUT_BITS;
+	localparam TEST_CARRY_IN_BIT	= MAX_TEST_BIT;
+	localparam TEST_SUM_BIT				= 0;
+	localparam TEST_CARRY_OUT_BIT	= MAX_OUTPUT_BIT;
+	localparam TEST_DELAY					= 10;
+	
+	//important step here
+  	assign tb_a = tb_test_inputs[15:0];
+	assign tb_b = tb_test_inputs[31:16];
+	assign tb_carry_in = tb_test_inputs[32];
+	
+	// Declare test bench signals
+	// DUT port map
+	adder_16bit DUT(.a(tb_a), .b(tb_b), .carry_in(tb_carry_in), .sum(tb_sum), .overflow(tb_carry_out));
+ 
+ // Test bench process
+  initial
+  begin
+    
+    //test 1
+    
+		//both should be 0
+    		
+		tb_test_inputs[15:0] = 16'h0000;//tmp_a
+		tb_test_inputs[31:16] = 16'h0000;//tmp_b
+		tb_test_inputs[32] = 1'b0;
+		#1;
+		tb_expected_outputs = tb_a + tb_b + tb_carry_in;
+		#(TEST_DELAY - 1);
+			
+		// Check the DUT's Sum output value
+		if(tb_expected_outputs[NUM_INPUT_BITS-1:TEST_SUM_BIT] == tb_sum)
+		begin
+		  $info("TEST 1 works");
+		end
+		else
+		begin
+			$error("TEST1 value of sum is wrong");
+		end
+			
+		// Check the DUT's Carry Out output value
+		if(tb_expected_outputs[TEST_CARRY_OUT_BIT] == tb_carry_out)
+		begin
+			$info("TEST 1 carry_out works");
+		end
+		else
+		begin
+			$error("TEST 1 carry_out works");
+		end
+	
+    
+    
+    
+    //test 2 
+    //a is a large number and b is a small number
+    
+    
+		tb_test_inputs[15:0] = 16'hFFFA;
+		tb_test_inputs[31:16] = 16'h0001;
+		tb_test_inputs[32] = 1'b0;
+			
+		// Wait for a bit to allow this process to catch up with assign statements triggered
+		// by test input assignment above
+		#1;
+			
+		// Calculate the expected outputs
+		tb_expected_outputs = tb_a + tb_b + tb_carry_in;
+			
+		// Wait for DUT to process the inputs
+		#(TEST_DELAY - 1);
+			
+		// Check the DUT's Sum output value
+		if(tb_expected_outputs[NUM_INPUT_BITS-1:TEST_SUM_BIT] == tb_sum)
+		begin
+		  $info("TEST 2 works";
+		end
+		else
+		begin
+			$error("TEST 2 works");
+		end
+			
+		// Check the DUT's Carry Out output value
+		if(tb_expected_outputs[TEST_CARRY_OUT_BIT] == tb_carry_out)
+		begin
+			$info("TEST 2 carry out works");
+		end
+		else
+		begin
+			$error("TEST 2 carry out works");
+		end
+		
+		
+		//test 3
+		// b is a larfge numeber and a is a small number
+		tb_test_inputs[15:0] = 16'h0001;
+		tb_test_inputs[31:16] = 16'hFFFA;
+		tb_test_inputs[32] = 1'b0;
+		
+		
+		// Wait for a bit to allow this process to catch up with assign statements triggered
+		// by test input assignment above
+		#1;
+			
+		// Calculate the expected outputs
+		tb_expected_outputs = tb_a + tb_b + tb_carry_in;
+			
+		// Wait for DUT to process the inputs
+		#(TEST_DELAY - 1);
+			
+		// Check the DUT's Sum output value
+		if(tb_expected_outputs[NUM_INPUT_BITS-1:TEST_SUM_BIT] == tb_sum)
+		begin
+		  $info("TEST 3 works");
+		end
+		else
+		begin
+			$error("TEST 3 works");
+		end
+			
+		// Check the DUT's Carry Out output value
+		if(tb_expected_outputs[TEST_CARRY_OUT_BIT] == tb_carry_out)
+		begin
+			$info("TEST 3 carry out works");
+		end
+		else
+		begin
+			$error("TEST 3 carry out works");
+		end
+		
+		
+		
+		
+		
+		
+		//test 4
+		//a is large number and b is a large number
+		
+		// Send test input to the design
+		tb_test_inputs[15:0] = 16'hAAFF;
+		tb_test_inputs[31:16] = 16'hFFAA;
+		tb_test_inputs[32] = 1'b0;
+		
+		
+		#1;
+			
+		
+		tb_expected_outputs = tb_a + tb_b + tb_carry_in;
+			
+		
+		#(TEST_DELAY - 1);
+			
+		// Check the DUT's Sum output value
+		if(tb_expected_outputs[NUM_INPUT_BITS-1:TEST_SUM_BIT] == tb_sum)
+		begin
+		  $info("TEST 4 works");
+		end
+		else
+		begin
+			$error("TEST 4 works");
+		end
+			
+		// Check the DUT's Carry Out output value
+		if(tb_expected_outputs[TEST_CARRY_OUT_BIT] == tb_carry_out)
+		begin
+			$info("TEST 4 carryout works");
+		end
+		else
+		begin
+			$error("TEST 4 carry out works");
+		end
+				
+
+    		//test 5 
+		//a is a small number and b is a small number
+		
+		// Send test input to the design
+		tb_test_inputs[15:0] = 16'h0002;
+		tb_test_inputs[31:16] = 16'h0001;
+		tb_test_inputs[32] = 1'b0;
+		
+					
+		// Wait for a bit to allow this process to catch up with assign statements triggered
+		// by test input assignment above
+		#1;
+			
+		// Calculate the expected outputs
+		tb_expected_outputs = tb_a + tb_b + tb_carry_in;
+			
+		// Wait for DUT to process the inputs
+		#(TEST_DELAY - 1);
+			
+		// Check the DUT's Sum output value
+		if(tb_expected_outputs[NUM_INPUT_BITS-1:TEST_SUM_BIT] == tb_sum)
+		begin
+		  $info("TEST 5 works");
+		end
+		else
+		begin
+			$error("TEST 5 works");
+		end
+			
+		// Check the DUT's Carry Out output value
+		if(tb_expected_outputs[TEST_CARRY_OUT_BIT] == tb_carry_out)
+		begin
+			$info("TEST 5 carryout works");
+		end
+		else
+		begin
+			$error("TEST 5 carry out works");
+		end
+  end	
+endmodule

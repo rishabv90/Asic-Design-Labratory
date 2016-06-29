@@ -1,0 +1,184 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : adder_16bit
+Version: K-2015.06-SP1
+Date   : Fri Feb  5 22:17:10 2016
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: b[0] (input port)
+  Endpoint: overflow (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  b[0] (in)                                               0.00       0.00 f
+  IX/b[0] (adder_nbit_BIT_WIDTH16)                        0.00       0.00 f
+  IX/genblk2[0].IX/b (adder_1bit_15)                      0.00       0.00 f
+  IX/genblk2[0].IX/U4/Y (XOR2X1)                          0.27       0.27 f
+  IX/genblk2[0].IX/U3/Y (AOI22X1)                         0.15       0.42 r
+  IX/genblk2[0].IX/U2/Y (INVX1)                           0.25       0.67 f
+  IX/genblk2[0].IX/carry_out (adder_1bit_15)              0.00       0.67 f
+  IX/genblk2[1].IX/carry_in (adder_1bit_14)               0.00       0.67 f
+  IX/genblk2[1].IX/U3/Y (AOI22X1)                         0.13       0.79 r
+  IX/genblk2[1].IX/U2/Y (INVX1)                           0.25       1.04 f
+  IX/genblk2[1].IX/carry_out (adder_1bit_14)              0.00       1.04 f
+  IX/genblk2[2].IX/carry_in (adder_1bit_13)               0.00       1.04 f
+  IX/genblk2[2].IX/U3/Y (AOI22X1)                         0.13       1.17 r
+  IX/genblk2[2].IX/U2/Y (INVX1)                           0.25       1.41 f
+  IX/genblk2[2].IX/carry_out (adder_1bit_13)              0.00       1.41 f
+  IX/genblk2[3].IX/carry_in (adder_1bit_12)               0.00       1.41 f
+  IX/genblk2[3].IX/U3/Y (AOI22X1)                         0.13       1.54 r
+  IX/genblk2[3].IX/U2/Y (INVX1)                           0.25       1.79 f
+  IX/genblk2[3].IX/carry_out (adder_1bit_12)              0.00       1.79 f
+  IX/genblk2[4].IX/carry_in (adder_1bit_11)               0.00       1.79 f
+  IX/genblk2[4].IX/U3/Y (AOI22X1)                         0.13       1.91 r
+  IX/genblk2[4].IX/U2/Y (INVX1)                           0.25       2.16 f
+  IX/genblk2[4].IX/carry_out (adder_1bit_11)              0.00       2.16 f
+  IX/genblk2[5].IX/carry_in (adder_1bit_10)               0.00       2.16 f
+  IX/genblk2[5].IX/U3/Y (AOI22X1)                         0.13       2.29 r
+  IX/genblk2[5].IX/U2/Y (INVX1)                           0.25       2.54 f
+  IX/genblk2[5].IX/carry_out (adder_1bit_10)              0.00       2.54 f
+  IX/genblk2[6].IX/carry_in (adder_1bit_9)                0.00       2.54 f
+  IX/genblk2[6].IX/U3/Y (AOI22X1)                         0.13       2.66 r
+  IX/genblk2[6].IX/U2/Y (INVX1)                           0.25       2.91 f
+  IX/genblk2[6].IX/carry_out (adder_1bit_9)               0.00       2.91 f
+  IX/genblk2[7].IX/carry_in (adder_1bit_8)                0.00       2.91 f
+  IX/genblk2[7].IX/U3/Y (AOI22X1)                         0.13       3.04 r
+  IX/genblk2[7].IX/U2/Y (INVX1)                           0.25       3.28 f
+  IX/genblk2[7].IX/carry_out (adder_1bit_8)               0.00       3.28 f
+  IX/genblk2[8].IX/carry_in (adder_1bit_7)                0.00       3.28 f
+  IX/genblk2[8].IX/U3/Y (AOI22X1)                         0.13       3.41 r
+  IX/genblk2[8].IX/U2/Y (INVX1)                           0.25       3.66 f
+  IX/genblk2[8].IX/carry_out (adder_1bit_7)               0.00       3.66 f
+  IX/genblk2[9].IX/carry_in (adder_1bit_6)                0.00       3.66 f
+  IX/genblk2[9].IX/U3/Y (AOI22X1)                         0.13       3.78 r
+  IX/genblk2[9].IX/U2/Y (INVX1)                           0.25       4.03 f
+  IX/genblk2[9].IX/carry_out (adder_1bit_6)               0.00       4.03 f
+  IX/genblk2[10].IX/carry_in (adder_1bit_5)               0.00       4.03 f
+  IX/genblk2[10].IX/U3/Y (AOI22X1)                        0.13       4.16 r
+  IX/genblk2[10].IX/U2/Y (INVX1)                          0.25       4.41 f
+  IX/genblk2[10].IX/carry_out (adder_1bit_5)              0.00       4.41 f
+  IX/genblk2[11].IX/carry_in (adder_1bit_4)               0.00       4.41 f
+  IX/genblk2[11].IX/U3/Y (AOI22X1)                        0.13       4.53 r
+  IX/genblk2[11].IX/U2/Y (INVX1)                          0.25       4.78 f
+  IX/genblk2[11].IX/carry_out (adder_1bit_4)              0.00       4.78 f
+  IX/genblk2[12].IX/carry_in (adder_1bit_3)               0.00       4.78 f
+  IX/genblk2[12].IX/U3/Y (AOI22X1)                        0.13       4.91 r
+  IX/genblk2[12].IX/U2/Y (INVX1)                          0.25       5.15 f
+  IX/genblk2[12].IX/carry_out (adder_1bit_3)              0.00       5.15 f
+  IX/genblk2[13].IX/carry_in (adder_1bit_2)               0.00       5.15 f
+  IX/genblk2[13].IX/U3/Y (AOI22X1)                        0.13       5.28 r
+  IX/genblk2[13].IX/U2/Y (INVX1)                          0.25       5.53 f
+  IX/genblk2[13].IX/carry_out (adder_1bit_2)              0.00       5.53 f
+  IX/genblk2[14].IX/carry_in (adder_1bit_1)               0.00       5.53 f
+  IX/genblk2[14].IX/U3/Y (AOI22X1)                        0.13       5.65 r
+  IX/genblk2[14].IX/U2/Y (INVX1)                          0.25       5.90 f
+  IX/genblk2[14].IX/carry_out (adder_1bit_1)              0.00       5.90 f
+  IX/genblk2[15].IX/carry_in (adder_1bit_0)               0.00       5.90 f
+  IX/genblk2[15].IX/U3/Y (AOI22X1)                        0.13       6.03 r
+  IX/genblk2[15].IX/U2/Y (INVX1)                          0.05       6.08 f
+  IX/genblk2[15].IX/carry_out (adder_1bit_0)              0.00       6.08 f
+  IX/overflow (adder_nbit_BIT_WIDTH16)                    0.00       6.08 f
+  overflow (out)                                          0.00       6.08 f
+  data arrival time                                                  6.08
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : adder_16bit
+Version: K-2015.06-SP1
+Date   : Fri Feb  5 22:17:10 2016
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                          180
+Number of nets:                           227
+Number of cells:                           81
+Number of combinational cells:             64
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         16
+Number of references:                       1
+
+Combinational area:              24192.000000
+Buf/Inv area:                     2304.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 24192.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : adder_16bit
+Version: K-2015.06-SP1
+Date   : Fri Feb  5 22:17:10 2016
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+adder_16bit                               7.090   13.143    7.730   20.233 100.0
+  IX (adder_nbit_BIT_WIDTH16)             7.090   13.143    7.730   20.233 100.0
+    genblk2[15].IX (adder_1bit_0)         0.268    0.839    0.483    1.107   5.5
+    genblk2[14].IX (adder_1bit_1)         0.455    0.830    0.483    1.285   6.3
+    genblk2[13].IX (adder_1bit_2)         0.463    0.844    0.483    1.307   6.5
+    genblk2[12].IX (adder_1bit_3)         0.460    0.836    0.483    1.296   6.4
+    genblk2[11].IX (adder_1bit_4)         0.462    0.839    0.483    1.301   6.4
+    genblk2[10].IX (adder_1bit_5)         0.461    0.841    0.483    1.302   6.4
+    genblk2[9].IX (adder_1bit_6)          0.461    0.832    0.483    1.292   6.4
+    genblk2[8].IX (adder_1bit_7)          0.455    0.828    0.483    1.283   6.3
+    genblk2[7].IX (adder_1bit_8)          0.460    0.839    0.483    1.299   6.4
+    genblk2[6].IX (adder_1bit_9)          0.460    0.840    0.483    1.300   6.4
+    genblk2[5].IX (adder_1bit_10)         0.457    0.828    0.483    1.285   6.4
+    genblk2[4].IX (adder_1bit_11)         0.451    0.820    0.483    1.272   6.3
+    genblk2[3].IX (adder_1bit_12)         0.453    0.828    0.483    1.282   6.3
+    genblk2[2].IX (adder_1bit_13)         0.463    0.830    0.483    1.293   6.4
+    genblk2[1].IX (adder_1bit_14)         0.441    0.783    0.483    1.224   6.0
+    genblk2[0].IX (adder_1bit_15)         0.418    0.687    0.483    1.105   5.5
+1
