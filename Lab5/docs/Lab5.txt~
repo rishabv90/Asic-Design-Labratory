@@ -1,0 +1,67 @@
+﻿Name : Rishab Verma 
+Date : 19 th feb 2016
+
+
+
+
+How were image files different ??
+The image was completely blurred and was fadded.
+Honestly, i dont think this would make sense , since the coefficients can be anything that you want.
+
+
+
+
+
+what is the general syntax for each of the file IO functions used in the provided test bench ?
+open tbsim image filename
+
+
+What are the different format specifiers available for use in file functions like fscanf(..)?
+%d %c %f  
+
+
+
+1. Rate yourself and your partner or partners on the following criteria. Apply each criterion to each of your partners individually. Answer on a scale of 1 to 5 where 1 = strongly disagree, 3 = indifferent, 5 = strongly agree.
+
+This team member made a sincere effort (to the best that you can tell) to figure out the 
+design and testing so as to be able to contribute to the team effort
+
+Ans = 4
+
+
+This team member was respectful and considerate of other team members.
+
+Ans = 5
+
+
+This team member fulfilled all promised or commitments to team members including those listed in ground rules 1-5.
+
+Ans = 5
+
+
+You were able to achieve or learn more with this partner than you would have without.
+
+Ans = 4
+
+2) Describe briefly the contribution of each team member :-
+	Kshitij helped me with Sr_9 bit file and helped me fix the error I got once I finished with the rcu file . He also helped my fix my Timer block diagram as earlier it was not correct after I tried to get it checked off from the TA.
+He also helped me with the Test bench for RCU .
+
+
+
+3) How many times did you and your team mate(s) meet? How frequently did you e-mail or instant message your team-mate(s)?
+
+	we met about 3 times however we insta messaged each other pretty much everyday.
+
+4) What did you contribute to the team effort? 
+	I helped with the Rtl diagrams and the block diagram. I think it was an important step in this lab. I also helped the with the psuedo code for the same. 
+
+5) What did each of your collaborators contribute? If you learned something useful from this person, what was it?
+
+	I learned about debugging my code form the wave form elaborately as I earlier I was not so strong in this area. 
+
+6) Whose testbench code(viewed on Piazza) significantly helped you?How?
+	
+	we saw the testbench posted on piazza and think it was pretty useful and kind of worked our way over it . We also had help from our other friends from different lab sections. 
+
+
