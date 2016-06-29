@@ -1,0 +1,43 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work "+no_glitch_msg" -coverage -voptargs="+acc" -i -t ps source_work.tb_edge_detect 
+# Start time: 04:16:33 on Mar 11,2016
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_edge_detect(fast)
+# Loading work.edge_detect(fast)
+run 2000 ns
+# ** Info: Test case           1: Passed
+#    Time: 31200 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 57
+# ** Error: Test case           2: Failed
+#    Time: 52 ns  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 71
+# ** Info: Test case           3: Passed
+#    Time: 83200 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 82
+# ** Info: Test case           4: Passed
+#    Time: 93600 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 92
+# ** Info: Test case           5: Passed
+#    Time: 135200 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 106
+# ** Info: Test case           6: Passed
+#    Time: 145600 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 115
+# ** Info: Test case           7: Passed
+#    Time: 176800 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 131
+# ** Error: Test case           8: Failed
+#    Time: 197600 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 145
+# ** Error: Test case           9: Failed
+#    Time: 228800 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 158
+# ** Info: Test case          10: Passed
+#    Time: 239200 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 166
+# ** Info: Test case          11: Passed
+#    Time: 280800 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 180
+# ** Info: Test case          12: Passed
+#    Time: 291200 ps  Scope: tb_edge_detect File: source/tb_edge_detect.sv Line: 189
+# End time: 04:16:51 on Mar 11,2016, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0

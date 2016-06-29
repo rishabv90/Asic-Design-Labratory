@@ -1,0 +1,24 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work "+no_glitch_msg" -coverage -voptargs="+acc" -i -t ps source_work.tb_decode 
+# Start time: 06:03:56 on Mar 11,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_decode(fast)
+# Loading work.decode(fast)
+run 2000 ns
+# ** Error: test case 1 failed
+#    Time: 28 ns  Scope: tb_decode File: source/tb_decode.sv Line: 50
+# test case 1 passed
+# ** Error: test case 1 failed
+#    Time: 58 ns  Scope: tb_decode File: source/tb_decode.sv Line: 81
+# End time: 06:04:13 on Mar 11,2016, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0
