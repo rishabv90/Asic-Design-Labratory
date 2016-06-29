@@ -1,0 +1,285 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg147/ece337/Lab4
+T_opt
+!s110 1455410539
+VkSLlFSGA2UllT]_3E3^iK1
+04 12 4 work tb_rcv_block fast 0
+=1-c81f66bd1107-56bfcd6a-11269-73a7
+o-quiet -auto_acc_if_foreign -work mapped_work -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim +acc
+n@_opt
+OL;O;10.3b;59
+vflex_counter_NUM_CNT_BITS4_0
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 !s110 1455410531
+!i10b 1
+!s100 X8aBjd[_jjB38KmEbeMQF2
+IhhabL`Pgc5nNhnEGb@gUk2
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
+Z4 !s105 rcv_block_v_unit
+S1
+R0
+Z5 w1455410526
+Z6 8mapped/rcv_block.v
+Z7 Fmapped/rcv_block.v
+L0 177
+Z8 OL;L;10.3b;59
+r1
+!s85 0
+31
+Z9 !s108 1455410531.213565
+Z10 !s107 mapped/rcv_block.v|
+Z11 !s90 -sv|-work|mapped_work|mapped/rcv_block.v|
+!i113 0
+Z12 o-sv -work mapped_work
+Z13 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+nflex_counter_@n@u@m_@c@n@t_@b@i@t@s4_0
+vflex_counter_NUM_CNT_BITS4_1
+R1
+R2
+!i10b 1
+!s100 `aD9KM7AZVjWJS;KfCcfG2
+IheNZo2Xz2=n7W9zI6KU4i2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 104
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nflex_counter_@n@u@m_@c@n@t_@b@i@t@s4_1
+vflex_stp_sr_NUM_BITS9_SHIFT_MSB0
+R1
+R2
+!i10b 1
+!s100 aCDllf@@:64L^1?`^>HRI2
+I9BQbB`IcHYj6YL9EgQ5cD1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nflex_stp_sr_@n@u@m_@b@i@t@s9_@s@h@i@f@t_@m@s@b0
+vrcu
+R1
+R2
+!i10b 1
+!s100 6[:CGkI]j<NX<Z4jE6j1R1
+I?fNWakLSKAG?STi:WVXHe0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 268
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vrcv_block
+R1
+R2
+!i10b 1
+!s100 [MJ<o?bH_SL2RFbY=]CaB1
+INjS[^1l`XMRZ>OBB=B4Qf1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 357
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vrx_data_buff
+R1
+R2
+!i10b 1
+!s100 3DM86KS>D;1XSKiF<?:9b3
+I7I^=VTid3T<4TK5BBnJgY0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 304
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vsr_9bit
+R1
+R2
+!i10b 1
+!s100 AXnz5mTe@o96Uho[9Yc[=2
+IWF?f7JX1;YdMN_JTa3Ih90
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 62
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vstart_bit_det
+R1
+R2
+!i10b 1
+!s100 an]QLM[1UJibRzOz?Y21A1
+IkFi4eR^V2<D=@o;SfTEeT0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 74
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vstop_bit_chk
+R1
+R2
+!i10b 1
+!s100 VnT1gB2N3IMNUe6Cb9HZ[0
+IHYOdlnEAlXb^9F4:MiDaG1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 90
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vtb_rcv_block
+R1
+!s110 1455408893
+!i10b 1
+!s100 DdnHg4n]9:64a9kH9Ljf62
+IFSd?S490^@eeXf]7f:[GZ1
+R3
+!s105 tb_rcv_block_sv_unit
+S1
+R0
+w1455153509
+8source/tb_rcv_block.sv
+Fsource/tb_rcv_block.sv
+L0 11
+R8
+r1
+!s85 0
+31
+!s108 1455408892.840512
+!s107 source/tb_rcv_block.sv|
+!s90 -sv|-work|mapped_work|source/tb_rcv_block.sv|
+!i113 0
+R12
+R13
+vtimer
+R1
+R2
+!i10b 1
+!s100 @?2:M88YSJbNcfmRV=I;b2
+IXz2KTZO34=[80e:H7NFXX1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 250
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13

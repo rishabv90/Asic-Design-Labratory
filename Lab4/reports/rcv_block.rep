@@ -1,0 +1,115 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : rcv_block
+Version: K-2015.06-SP1
+Date   : Sat Feb 13 19:42:05 2016
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: RX_DATA_BUFFER/data_ready_reg
+              (rising edge-triggered flip-flop)
+  Endpoint: data_ready (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  RX_DATA_BUFFER/data_ready_reg/CLK (DFFSR)               0.00       0.00 r
+  RX_DATA_BUFFER/data_ready_reg/Q (DFFSR)                 0.53       0.53 f
+  RX_DATA_BUFFER/data_ready (rx_data_buff)                0.00       0.53 f
+  data_ready (out)                                        0.00       0.53 f
+  data arrival time                                                  0.53
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : rcv_block
+Version: K-2015.06-SP1
+Date   : Sat Feb 13 19:42:05 2016
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                          113
+Number of nets:                           331
+Number of cells:                          246
+Number of combinational cells:            159
+Number of sequential cells:                78
+Number of macros/black boxes:               0
+Number of buf/inv:                         51
+Number of references:                       6
+
+Combinational area:              44289.000000
+Buf/Inv area:                     7344.000000
+Noncombinational area:           60192.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                104481.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : rcv_block
+Version: K-2015.06-SP1
+Date   : Sat Feb 13 19:42:06 2016
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+rcv_block                              2.67e-02    4.680   32.889    4.707 100.0
+  RX_DATA_BUFFER (rx_data_buff)        3.15e-03    1.246    6.870    1.249  26.5
+  RUC (rcu)                            6.70e-03    0.325    2.699    0.332   7.1
+  TIMER (timer)                           0.000    1.229   14.651    1.229  26.1
+    count_9 (flex_counter_NUM_CNT_BITS4_0)
+                                          0.000    0.512    6.793    0.512  10.9
+    count_10 (flex_counter_NUM_CNT_BITS4_1)
+                                          0.000    0.512    6.793    0.512  10.9
+  CHECK_STOP_BIT (stop_bit_chk)        1.97e-04    0.102    0.745    0.103   2.2
+  DETECT_START_BIT (start_bit_det)     9.86e-03    0.606    1.680    0.616  13.1
+  SHIFT_REG_9BITs (sr_9bit)            6.79e-03    1.172    6.243    1.179  25.0
+    SHIFT_REG_9BIT (flex_stp_sr_NUM_BITS9_SHIFT_MSB0)
+                                       6.79e-03    1.172    6.243    1.179  25.0
+1
