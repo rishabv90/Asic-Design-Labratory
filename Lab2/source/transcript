@@ -1,0 +1,61 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/sync_low.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:04:03 on Jan 29,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/sync_low.sv 
+# -- Compiling module sync_low
+# 
+# Top level modules:
+# 	sync_low
+# End time: 02:04:04 on Jan 29,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/sync_high.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:08:37 on Jan 29,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/sync_high.sv 
+# -- Compiling module sync_high
+# 
+# Top level modules:
+# 	sync_high
+# End time: 02:08:37 on Jan 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/tb_sync_low.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:20:38 on Jan 29,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/tb_sync_low.sv 
+# -- Compiling module tb_sync_low
+# 
+# Top level modules:
+# 	tb_sync_low
+# End time: 02:20:38 on Jan 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/tb_sync_high.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:26:38 on Jan 29,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/tb_sync_high.sv 
+# -- Compiling module tb_sync_high
+# 
+# Top level modules:
+# 	tb_sync_high
+# End time: 02:26:39 on Jan 29,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/tb_sync_high.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:26:40 on Jan 29,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab2/source/tb_sync_high.sv 
+# -- Compiling module tb_sync_high
+# 
+# Top level modules:
+# 	tb_sync_high
+# End time: 02:26:40 on Jan 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Window cannot be closed because the modal window "Quit Vsim" is still open.

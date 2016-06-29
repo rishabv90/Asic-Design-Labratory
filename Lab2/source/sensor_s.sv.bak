@@ -1,0 +1,21 @@
+// $Id: $
+// File name:   sensor_s.sv
+// Created:     1/22/2016
+// Author:      Rishab Verma
+// Lab Section: 337-05
+// Version:     1.0  Initial Design Entry
+// Description: Lab 2 1structural coding of sensor error detector
+
+module sensor_s
+(
+	input wire [3:0] sensors,
+	output wire error
+);
+
+and A1 (int_and1, sensors[0], sensors[2]);
+and A2 (int_and2, sensors[1], sensors[2]);
+or B1 (int_or1, int_and1, int_and2);
+or B2 (int_or2, int_or1, sensors[3]);
+
+
+ endmodule
