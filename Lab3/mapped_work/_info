@@ -1,0 +1,532 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg147/ece337/Lab3
+T_opt
+!s110 1454729380
+Vf6n8E5WBF3H6Ge]S=K4C_0
+04 15 4 work tb_flex_counter fast 0
+=1-002219a71b2e-56b568a2-ea3f2-60a4
+Z1 o-quiet -auto_acc_if_foreign -work mapped_work -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim +acc
+n@_opt
+Z2 OL;O;10.3b;59
+T_opt1
+!s110 1454728648
+VhPF<kQ@3GgbbVDSo^3^6]0
+04 14 4 work tb_adder_16bit fast 0
+=1-002219a71b2e-56b565c6-8f3ff-575e
+R1
+n@_opt1
+R2
+R0
+vadder_16bit
+Z3 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z4 !s110 1454728638
+!i10b 1
+!s100 W<YQd`FWj;oB4zjJK_aT42
+Ie0`ZC?1kbnEd=T1FQdf`<1
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z6 !s105 adder_16bit_v_unit
+S1
+R0
+Z7 w1454728630
+Z8 8mapped/adder_16bit.v
+Z9 Fmapped/adder_16bit.v
+L0 244
+Z10 OL;L;10.3b;59
+r1
+!s85 0
+31
+Z11 !s108 1454728638.207695
+Z12 !s107 mapped/adder_16bit.v|
+Z13 !s90 -##implicit##push_minusfile_path##|/home/ecegrid/a/mg147/ece337/Lab3/vlog.opt|-##implicit##pop_minusfile_path##|-sv|-work|mapped_work|mapped/adder_16bit.v|
+!i113 0
+Z14 o-sv -work mapped_work
+Z15 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vadder_1bit_0
+R3
+R4
+!i10b 1
+!s100 MCL6POT[o64N@<;2^D4>I0
+I>?2EO:>^SYB4RQd6?Re6O2
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 20
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_1
+R3
+R4
+!i10b 1
+!s100 lR:Aj^^l:HoAEJAAW2?]m3
+I=fR2S3l?<g3k2A2CD0<Y80
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 32
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_10
+R3
+R4
+!i10b 1
+!s100 a6bobdfPGfCg2ENl^oMGh3
+I>CA:>c7C0WYMmF:4gh8:k3
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 140
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_11
+R3
+R4
+!i10b 1
+!s100 S[Fz88FDR8OTXBj^jCi9C1
+I3Ah<ZPHdmK8I;i?h5YMoZ3
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 152
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_12
+R3
+R4
+!i10b 1
+!s100 hjRBiOSic^h9?dRZZ>S@11
+I@UNo4GQVeAKN]Y69h[Z^31
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 164
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_13
+R3
+R4
+!i10b 1
+!s100 jJMClWk7A<8LZIOG_i8YK3
+ISlAI`zf939D5hfJ3VW4O^2
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 176
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_14
+R3
+R4
+!i10b 1
+!s100 g:`O5REQi;2dAk^6O5lzm2
+IJlHA5i821=TcNo9V]Ia:40
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 188
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_15
+R3
+R4
+!i10b 1
+!s100 D?98QHRWD4KX3_4N@T=o83
+I]l45mHV>ZT_G3>=7j3laj1
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 8
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_2
+R3
+R4
+!i10b 1
+!s100 Zf40CKloSb`AD3_Sg=eVF0
+IRCzP>b[5?2k9_232R=>6Z1
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 44
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_3
+R3
+R4
+!i10b 1
+!s100 ?GI_oNzDl:nz`KKa;Tg?12
+IWTlo86S86eKJY7CT8]a2h3
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 56
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_4
+R3
+R4
+!i10b 1
+!s100 =HFPUNOO;VANHRE]]TGo@3
+I:oei@DX]H^9Jl<N`1YYe=2
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 68
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_5
+R3
+R4
+!i10b 1
+!s100 C7N<3>ICjWNmD^aMBaRcg2
+I_=2Q_mN]JD?2>VRU9e1k[0
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 80
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_6
+R3
+R4
+!i10b 1
+!s100 iAK9d8=HHS:Q[cjzP?NMG1
+I?MAmcUlF]i8AYhAG?`eK72
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 92
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_7
+R3
+R4
+!i10b 1
+!s100 DildLb3>92@EPY[;e4>VB2
+I<8jcInhFm6HR?TWGkQzmQ0
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 104
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_8
+R3
+R4
+!i10b 1
+!s100 >zETIUF?Da[K5z<>_IKTi0
+IEGEV2BEDGHNcC1Fel7SeB2
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 116
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_1bit_9
+R3
+R4
+!i10b 1
+!s100 QS@oUUNO1OEk=[>T4>7?Q1
+Ieb^nH1506k1cLW:5DU2R63
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 128
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadder_nbit_BIT_WIDTH16
+R3
+R4
+!i10b 1
+!s100 QiZOe7L3@T_?02@2:5<HM2
+I2W7cGhkIZUK`GJDm0nUIM0
+R5
+R6
+S1
+R0
+R7
+R8
+R9
+L0 200
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+nadder_nbit_@b@i@t_@w@i@d@t@h16
+vflex_counter
+R3
+!s110 1454727956
+!i10b 1
+!s100 k;OB4=Czk_Z93SZoJeUfK1
+IQKf>Nog[QS0zUXk_B<a1X1
+R5
+!s105 flex_counter_v_unit
+S1
+R0
+w1454727944
+8mapped/flex_counter.v
+Fmapped/flex_counter.v
+L0 8
+R10
+r1
+!s85 0
+31
+!s108 1454727955.577986
+!s107 mapped/flex_counter.v|
+!s90 -##implicit##push_minusfile_path##|/home/ecegrid/a/mg147/ece337/Lab3/vlog.opt|-##implicit##pop_minusfile_path##|-sv|-work|mapped_work|mapped/flex_counter.v|
+!i113 0
+R14
+R15
+vtb_adder_16bit
+R3
+!s110 1454728639
+!i10b 1
+!s100 8azk=Ag][<k1Z1VOHoMVW1
+IccNbDm4bh66@bT]oZKA=F2
+R5
+!s105 tb_adder_16bit_sv_unit
+S1
+R0
+w1454655103
+8source/tb_adder_16bit.sv
+Fsource/tb_adder_16bit.sv
+L0 12
+R10
+r1
+!s85 0
+31
+!s108 1454728638.972999
+!s107 source/tb_adder_16bit.sv|
+!s90 -##implicit##push_minusfile_path##|/home/ecegrid/a/mg147/ece337/Lab3/vlog.opt|-##implicit##pop_minusfile_path##|-sv|-work|mapped_work|source/tb_adder_16bit.sv|
+!i113 0
+R14
+R15
+vtb_flex_counter
+R3
+!s110 1454729370
+!i10b 1
+!s100 DM4>4I:iJ7:F<<1cJNm:H0
+IfJfIFE46@2LGag1eO4bQf2
+R5
+!s105 tb_flex_counter_sv_unit
+S1
+R0
+w1454729242
+8source/tb_flex_counter.sv
+Fsource/tb_flex_counter.sv
+L0 13
+R10
+r1
+!s85 0
+31
+!s108 1454729369.858555
+!s107 source/tb_flex_counter.sv|
+!s90 -##implicit##push_minusfile_path##|/home/ecegrid/a/mg147/ece337/Lab3/vlog.opt|-##implicit##pop_minusfile_path##|-sv|-work|mapped_work|source/tb_flex_counter.sv|
+!i113 0
+R14
+R15
