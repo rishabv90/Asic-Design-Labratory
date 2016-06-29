@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg147/ece337/Lab6
+vdecode
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1457692575
+!i10b 1
+!s100 e3Wb7N5gZk`>gK>5MnzR11
+I7WlZ=3NV:QYz56a?;Rc;V2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 decode_sv_unit
+S1
+R0
+w1457692571
+8/home/ecegrid/a/mg147/ece337/Lab6/source/decode.sv
+F/home/ecegrid/a/mg147/ece337/Lab6/source/decode.sv
+L0 9
+Z3 OL;L;10.3b;59
+r1
+!s85 0
+31
+!s108 1457692575.896536
+!s107 /home/ecegrid/a/mg147/ece337/Lab6/source/decode.sv|
+!s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg147/ece337/Lab6/source/decode.sv|
+!i113 0
+Z4 o-work work
+Z5 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vedge_detect
+R1
+!s110 1457692641
+!i10b 1
+!s100 <PWYo_12i4cZ2KaJH]5_R3
+I]MenVA9PFZGF;[]9jkeVJ1
+R2
+!s105 edge_detect_sv_unit
+S1
+R0
+w1457692639
+8/home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+F/home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+L0 7
+R3
+r1
+!s85 0
+31
+!s108 1457692641.831183
+!s107 /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv|
+!s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv|
+!i113 0
+R4
+R5
+vrcu
+R1
+!s110 1460330763
+!i10b 1
+!s100 [?URe^8Ob4B`hzhXZBAJa1
+I`]26U^eaZ7f[_3bKg1Lfh2
+R2
+!s105 rcu_sv_unit
+S1
+R0
+w1460330756
+8/home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+F/home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+L0 11
+R3
+r1
+!s85 0
+31
+!s108 1460330763.039991
+!s107 /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv|
+!s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv|
+!i113 0
+R4
+R5
+vshift_register
+R1
+!s110 1457693384
+!i10b 1
+!s100 l]6Nz>PiBg16?79D7MQ;F1
+Izf8R[L3dSB>33[CbIkV>f3
+R2
+!s105 shift_register_sv_unit
+S1
+R0
+w1457693379
+8/home/ecegrid/a/mg147/ece337/Lab6/source/shift_register.sv
+F/home/ecegrid/a/mg147/ece337/Lab6/source/shift_register.sv
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1457693384.518784
+!s107 /home/ecegrid/a/mg147/ece337/Lab6/source/shift_register.sv|
+!s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg147/ece337/Lab6/source/shift_register.sv|
+!i113 0
+R4
+R5
+vusb_receiver
+R1
+!s110 1457693006
+!i10b 1
+!s100 o4QKeI:k>z01oMk;M?d?Z0
+Il]8OS?[_m3C5=MT@Q=2=?3
+R2
+!s105 usb_receiver_sv_unit
+S1
+R0
+w1457692999
+8/home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+F/home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+L0 13
+R3
+r1
+!s85 0
+31
+!s108 1457693006.823075
+!s107 /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv|
+!s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv|
+!i113 0
+R4
+R5

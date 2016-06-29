@@ -1,0 +1,330 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg147/ece337/Lab6
+T_opt
+!s110 1460330796
+V5PQ4emMZ[`R5MJgK8E6=L1
+04 15 4 work tb_usb_receiver fast 0
+=1-c81f66bd1107-570ae12c-a8060-100b
+o-quiet -auto_acc_if_foreign -work source_work -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim +acc
+n@_opt
+OL;O;10.3b;59
+vdecode
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 !s110 1460330404
+!i10b 1
+!s100 Qdn9GXGPLE[jP0CfhiUWB1
+I<HmJ3b9VHW?Aj[iREb[<?1
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 decode_sv_unit
+S1
+R0
+w1457699862
+8source/decode.sv
+Fsource/decode.sv
+L0 9
+Z4 OL;L;10.3b;59
+r1
+!s85 0
+31
+!s108 1460330404.807271
+!s107 source/decode.sv|
+!s90 -sv|-work|source_work|source/decode.sv|
+!i113 0
+Z5 o-sv -work source_work
+Z6 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vedge_detect
+R1
+R2
+!i10b 1
+!s100 <PWYo_12i4cZ2KaJH]5_R3
+IX5n]OA]B17T6D8JRNNmYD0
+R3
+!s105 edge_detect_sv_unit
+S1
+R0
+w1457694519
+8source/edge_detect.sv
+Fsource/edge_detect.sv
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1460330404.548412
+!s107 source/edge_detect.sv|
+!s90 -sv|-work|source_work|source/edge_detect.sv|
+!i113 0
+R5
+R6
+veop_detect
+R1
+R2
+!i10b 1
+!s100 zMSM6IaAWTd>1[Tj]7a7?0
+IC_KLKUCOaQm8MVY=IZ1F?1
+R3
+!s105 eop_detect_sv_unit
+S1
+R0
+w1457681782
+8source/eop_detect.sv
+Fsource/eop_detect.sv
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1460330404.683144
+!s107 source/eop_detect.sv|
+!s90 -sv|-work|source_work|source/eop_detect.sv|
+!i113 0
+R5
+R6
+vflex_counter
+R1
+Z7 !s110 1460330405
+!i10b 1
+!s100 GZN7W4DNTiEo@ggI?zT2N3
+I0kDIJZ9R1o4H@6zIYJB[n0
+R3
+!s105 flex_counter_sv_unit
+S1
+R0
+w1457694530
+8source/flex_counter.sv
+Fsource/flex_counter.sv
+Z8 L0 10
+R4
+r1
+!s85 0
+31
+!s108 1460330405.747081
+!s107 source/flex_counter.sv|
+!s90 -sv|-work|source_work|source/flex_counter.sv|
+!i113 0
+R5
+R6
+vflex_stp_sr
+R1
+R7
+!i10b 1
+!s100 G81W92Rkn41QPZPoi;6HJ1
+I?dF0kI_m]PiY6RDMob@mG2
+R3
+!s105 flex_stp_sr_sv_unit
+S1
+R0
+w1457693333
+8source/flex_stp_sr.sv
+Fsource/flex_stp_sr.sv
+R8
+R4
+r1
+!s85 0
+31
+!s108 1460330405.889095
+!s107 source/flex_stp_sr.sv|
+!s90 -sv|-work|source_work|source/flex_stp_sr.sv|
+!i113 0
+R5
+R6
+vrcu
+R1
+!s110 1460330788
+!i10b 1
+!s100 [?URe^8Ob4B`hzhXZBAJa1
+I81=RKE3PR]D0n84X6Y>ig1
+R3
+!s105 rcu_sv_unit
+S1
+R0
+w1460330756
+8source/rcu.sv
+Fsource/rcu.sv
+Z9 L0 11
+R4
+r1
+!s85 0
+31
+!s108 1460330788.444664
+!s107 source/rcu.sv|
+!s90 -sv|-work|source_work|source/rcu.sv|
+!i113 0
+R5
+R6
+vrx_fifo
+R1
+R2
+!i10b 1
+!s100 Qfan:Hd8e6BWCL8W791K80
+I1B?IcC[aW2?QmiRV_mA^B2
+R3
+!s105 rx_fifo_sv_unit
+S1
+R0
+w1457692107
+8source/rx_fifo.sv
+Fsource/rx_fifo.sv
+R8
+R4
+r1
+!s85 0
+31
+!s108 1460330404.927073
+!s107 source/rx_fifo.sv|
+!s90 -sv|-work|source_work|source/rx_fifo.sv|
+!i113 0
+R5
+R6
+vshift_register
+R1
+R7
+!i10b 1
+!s100 l]6Nz>PiBg16?79D7MQ;F1
+Iji`KX7om^6HAnT7UcGWhL3
+R3
+!s105 shift_register_sv_unit
+S1
+R0
+w1457693389
+8source/shift_register.sv
+Fsource/shift_register.sv
+R8
+R4
+r1
+!s85 0
+31
+!s108 1460330405.043917
+!s107 source/shift_register.sv|
+!s90 -sv|-work|source_work|source/shift_register.sv|
+!i113 0
+R5
+R6
+vsync_high
+R1
+R7
+!i10b 1
+!s100 88hb_Q<BVeGeIXBZ<2E;f0
+IC=ZS53BAmoK[n9hn3Q8Y42
+R3
+!s105 sync_high_sv_unit
+S1
+R0
+w1457693511
+8source/sync_high.sv
+Fsource/sync_high.sv
+L0 8
+R4
+r1
+!s85 0
+31
+!s108 1460330405.609374
+!s107 source/sync_high.sv|
+!s90 -sv|-work|source_work|source/sync_high.sv|
+!i113 0
+R5
+R6
+vsync_low
+R1
+R7
+!i10b 1
+!s100 eUF`HZRRb@ME?U0Q9Ozc:1
+IQPCjLKRSh;PcMUBl`Y2860
+R3
+!s105 sync_low_sv_unit
+S1
+R0
+w1457700163
+8source/sync_low.sv
+Fsource/sync_low.sv
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1460330405.470344
+!s107 source/sync_low.sv|
+!s90 -sv|-work|source_work|source/sync_low.sv|
+!i113 0
+R5
+R6
+vtb_usb_receiver
+R1
+R2
+!i10b 1
+!s100 ]R5>CS^K6a7Fj<YA06YVa1
+ITTLiKS`:US;F>cAC8:I=k0
+R3
+!s105 tb_usb_receiver_sv_unit
+S1
+R0
+w1457908761
+8source/tb_usb_receiver.sv
+Fsource/tb_usb_receiver.sv
+L0 14
+R4
+r1
+!s85 0
+31
+!s108 1460330404.406277
+!s107 source/tb_usb_receiver.sv|
+!s90 -sv|-work|source_work|source/tb_usb_receiver.sv|
+!i113 0
+R5
+R6
+vtimer
+R1
+R7
+!i10b 1
+!s100 Lh[lY2zcJ9:8]oTJQ4gbj2
+ILeJ;?e<_5<IaDMMcNJgV@1
+R3
+!s105 timer_sv_unit
+S1
+R0
+w1457908284
+8source/timer.sv
+Fsource/timer.sv
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1460330405.297727
+!s107 source/timer.sv|
+!s90 -sv|-work|source_work|source/timer.sv|
+!i113 0
+R5
+R6
+vusb_receiver
+R1
+R2
+!i10b 1
+!s100 ^lLkYUj5dl?c99SV>AXB:0
+Im]Zl]ZkK@MNR=BLl1_5mm1
+R3
+!s105 usb_receiver_sv_unit
+S1
+R0
+w1457693346
+8source/usb_receiver.sv
+Fsource/usb_receiver.sv
+R9
+R4
+r1
+!s85 0
+31
+!s108 1460330404.235143
+!s107 source/usb_receiver.sv|
+!s90 -sv|-work|source_work|source/usb_receiver.sv|
+!i113 0
+R5
+R6
