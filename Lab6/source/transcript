@@ -1,0 +1,728 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+restart
+# No Design Loaded!
+vlib work
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:52:49 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# End time: 19:52:49 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:53:07 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# End time: 19:53:07 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/decode.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:24:17 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/decode.sv 
+# -- Compiling module decode
+# 
+# Top level modules:
+# 	decode
+# End time: 20:24:17 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/eop_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:29:46 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/eop_detect.sv 
+# -- Compiling module eop_detect
+# 
+# Top level modules:
+# 	eop_detect
+# End time: 20:29:46 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:42:17 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv 
+# -- Compiling module flex_counter
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(83): LHS in procedural continuous assignment may not be a net: count_out.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(84): LHS in procedural continuous assignment may not be a net: rollover_flag.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(85): near "endmodule": syntax error, unexpected endmodule
+# End time: 20:42:17 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:42:40 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv 
+# -- Compiling module flex_counter
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(83): LHS in procedural continuous assignment may not be a net: count_out.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(84): LHS in procedural continuous assignment may not be a net: rollover_flag.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(88): near "endmodule": syntax error, unexpected endmodule
+# End time: 20:42:40 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:43:09 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv 
+# -- Compiling module flex_counter
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(83): LHS in procedural continuous assignment may not be a net: count_out.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(84): LHS in procedural continuous assignment may not be a net: rollover_flag.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv(88): near "endmodule": syntax error, unexpected endmodule
+# End time: 20:43:09 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:44:55 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv 
+# -- Compiling module flex_counter
+# 
+# Top level modules:
+# 	flex_counter
+# End time: 20:44:55 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:45:00 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/flex_counter.sv 
+# -- Compiling module flex_counter
+# 
+# Top level modules:
+# 	flex_counter
+# End time: 20:45:00 on Mar 05,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 21:02:52 on Mar 05,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# End time: 21:02:53 on Mar 05,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:09:11 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv 
+# -- Compiling module rx_fifo
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv(36): near ")": syntax error, unexpected ')', expecting .* or '.'
+# End time: 19:09:11 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:10:02 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv 
+# -- Compiling module rx_fifo
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv(36): near ")": syntax error, unexpected ')', expecting .* or '.'
+# End time: 19:10:02 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:10:45 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rx_fifo.sv 
+# -- Compiling module rx_fifo
+# 
+# Top level modules:
+# 	rx_fifo
+# End time: 19:10:45 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:15:55 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv(27): (vlog-2730) Undefined variable: 'time_co'.
+# End time: 20:15:55 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:16:11 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv(17): In, out, or inout does not appear in port list: timer_co.
+# End time: 20:16:12 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:16:38 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# End time: 20:16:38 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/shift_register.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:32:41 on Mar 07,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/shift_register.sv 
+# -- Compiling module shift_register
+# 
+# Top level modules:
+# 	shift_register
+# End time: 20:32:42 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:38:40 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(9): near "EOF": syntax error, unexpected end of source code, expecting IDENTIFIER or automatic or TYPE_IDENTIFIER or static
+# End time: 01:38:40 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:39:03 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(9): near "EOF": syntax error, unexpected end of source code, expecting IDENTIFIER or automatic or TYPE_IDENTIFIER or static
+# End time: 01:39:03 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:39:43 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(9): near "EOF": syntax error, unexpected end of source code, expecting IDENTIFIER or automatic or TYPE_IDENTIFIER or static
+# End time: 01:39:43 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:42:43 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(9): near "EOF": syntax error, unexpected end of source code, expecting IDENTIFIER or automatic or TYPE_IDENTIFIER or static
+# End time: 01:42:43 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:43:07 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(9): near "EOF": syntax error, unexpected end of source code, expecting IDENTIFIER or automatic or TYPE_IDENTIFIER or static
+# End time: 01:43:07 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:44:02 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 01:44:02 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:44:12 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 01:44:12 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:44:24 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 01:44:24 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:53:51 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 01:53:51 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:56:34 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(64): (vlog-2388) 'd_edge' already declared in this scope (usb_receiver).
+# End time: 01:56:34 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:56:55 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv(64): (vlog-2388) 'd_edge' already declared in this scope (usb_receiver).
+# End time: 01:56:55 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 01:57:00 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 01:57:00 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:03:45 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 02:03:45 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:03:47 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 02:03:47 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:03:47 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 02:03:47 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:03:47 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 02:03:47 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:09:51 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 02:09:51 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:11:32 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 02:11:32 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:59:54 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(45): (vlog-2730) Undefined variable: 'state'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(48): (vlog-2730) Undefined variable: 'dedge'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(50): (vlog-2730) Undefined variable: 'Rcvingbyte'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(57): (vlog-2730) Undefined variable: 'w_error'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(62): (vlog-2730) Undefined variable: 'Rcvingbyte'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): (vlog-2730) Undefined variable: 'w_error'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): near "=": syntax error, unexpected '=', expecting ++ or --
+# End time: 18:59:54 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:00:31 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(48): (vlog-2730) Undefined variable: 'dedge'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(50): (vlog-2730) Undefined variable: 'Rcvingbyte'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(57): (vlog-2730) Undefined variable: 'w_error'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(62): (vlog-2730) Undefined variable: 'Rcvingbyte'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): (vlog-2730) Undefined variable: 'w_error'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): near "=": syntax error, unexpected '=', expecting ++ or --
+# End time: 19:00:31 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:01:14 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(57): (vlog-2730) Undefined variable: 'w_error'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): (vlog-2730) Undefined variable: 'w_error'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): near "=": syntax error, unexpected '=', expecting ++ or --
+# End time: 19:01:14 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:09:07 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(105): near "=": syntax error, unexpected '=', expecting ++ or --
+# End time: 19:09:07 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:09:28 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(114): near "endmodule": syntax error, unexpected endmodule
+# End time: 19:09:28 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:09:54 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(114): near "endmodule": syntax error, unexpected endmodule
+# End time: 19:09:54 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:10:25 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# 
+# Top level modules:
+# 	rcu
+# End time: 19:10:25 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:11:40 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# 
+# Top level modules:
+# 	rcu
+# End time: 19:11:40 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:11:41 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# 
+# Top level modules:
+# 	rcu
+# End time: 19:11:41 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:30:57 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(147): (vlog-2730) Undefined variable: 'received'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(199): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(210): near "endcase": syntax error, unexpected endcase
+# End time: 19:30:57 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:31:25 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# 
+# Top level modules:
+# 	rcu
+# End time: 19:31:25 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:38:20 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv 
+# -- Compiling module tb_usb_receiver
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2284) Empty $unit scope found.
+# 
+# Top level modules:
+# 	tb_usb_receiver
+# End time: 19:38:20 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:38:40 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv 
+# -- Compiling module tb_usb_receiver
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2284) Empty $unit scope found.
+# 
+# Top level modules:
+# 	tb_usb_receiver
+# End time: 19:38:40 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:38:40 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv 
+# -- Compiling module tb_usb_receiver
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2284) Empty $unit scope found.
+# 
+# Top level modules:
+# 	tb_usb_receiver
+# End time: 19:38:40 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:43:01 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/usb_receiver.sv 
+# -- Compiling module usb_receiver
+# 
+# Top level modules:
+# 	usb_receiver
+# End time: 19:43:01 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:07:13 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv 
+# -- Compiling module tb_usb_receiver
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(52): (vlog-2283) Extra semicolon in $unit (global) scope.
+# ** Warning: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_usb_receiver.sv(54): (vlog-2284) Empty $unit scope found.
+# 
+# Top level modules:
+# 	tb_usb_receiver
+# End time: 20:07:13 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:18:28 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv 
+# -- Compiling module tb_eop_detect
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv(42): near "EOF": syntax error, unexpected end of source code
+# End time: 20:18:28 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:18:30 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_edge_detect.sv 
+# -- Compiling module tb_edge_detect
+# 
+# Top level modules:
+# 	tb_edge_detect
+# End time: 20:18:30 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:18:36 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_edge_detect.sv 
+# -- Compiling module tb_edge_detect
+# 
+# Top level modules:
+# 	tb_edge_detect
+# End time: 20:18:36 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:18:36 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv 
+# -- Compiling module tb_eop_detect
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv(42): near "EOF": syntax error, unexpected end of source code
+# End time: 20:18:37 on Mar 10,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:18:40 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv 
+# -- Compiling module tb_eop_detect
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/tb_eop_detect.sv(42): near "EOF": syntax error, unexpected end of source code
+# End time: 20:18:40 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:18:41 on Mar 10,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/tb_edge_detect.sv 
+# -- Compiling module tb_edge_detect
+# 
+# Top level modules:
+# 	tb_edge_detect
+# End time: 20:18:41 on Mar 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:47:36 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv(41): near ";": syntax error, unexpected ';', expecting ')'
+# End time: 02:47:36 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:47:57 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv(41): near ";": syntax error, unexpected ';', expecting ')'
+# End time: 02:47:57 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:47:58 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv(41): near ";": syntax error, unexpected ';', expecting ')'
+# End time: 02:47:58 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:47:58 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv(41): near ";": syntax error, unexpected ';', expecting ')'
+# End time: 02:47:58 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:48:06 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/timer.sv 
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# End time: 02:48:06 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:00:56 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# -- Compiling module edge_detect
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(42): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(46): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(50): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# End time: 03:00:56 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:00:57 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# -- Compiling module edge_detect
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(42): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(46): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(50): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# End time: 03:00:57 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:00:57 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# -- Compiling module edge_detect
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(42): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(46): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# ** Error: (vlog-7033) /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(50): Variable 'next' driven in a combinatorial block, may not be driven by any other process. See /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(34).
+# End time: 03:00:57 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:03:05 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# -- Compiling module edge_detect
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv(35): near "current": syntax error, unexpected IDENTIFIER, expecting ';'
+# End time: 03:03:05 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:03:17 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# -- Compiling module edge_detect
+# 
+# Top level modules:
+# 	edge_detect
+# End time: 03:03:17 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:03:47 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/edge_detect.sv 
+# -- Compiling module edge_detect
+# 
+# Top level modules:
+# 	edge_detect
+# End time: 03:03:47 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_high.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:10:54 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_high.sv 
+# -- Compiling module sync_high
+# 
+# Top level modules:
+# 	sync_high
+# End time: 03:10:54 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_high.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:11:37 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_high.sv 
+# -- Compiling module sync_high
+# 
+# Top level modules:
+# 	sync_high
+# End time: 03:11:37 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_low.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:13:03 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_low.sv 
+# -- Compiling module sync_low
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/sync_low.sv(76): near "EOF": syntax error, unexpected end of source code
+# End time: 03:13:03 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_low.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:13:19 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/sync_low.sv 
+# -- Compiling module sync_low
+# 
+# Top level modules:
+# 	sync_low
+# End time: 03:13:19 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:48:47 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(114): (vlog-2730) Undefined variable: 'Wait'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(142): (vlog-2730) Undefined variable: 'Error_Read'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(161): (vlog-2730) Undefined variable: 'Wait'.
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(232): (vlog-2730) Undefined variable: 'Wait'.
+# End time: 03:48:47 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:49:32 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(25): near "}": syntax error, unexpected '}', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 03:49:32 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:49:50 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# ** Error: /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv(150): (vlog-2730) Undefined variable: 'Error_Read'.
+# End time: 03:49:50 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 03:50:06 on Mar 11,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab6/source/rcu.sv 
+# -- Compiling module rcu
+# 
+# Top level modules:
+# 	rcu
+# End time: 03:50:06 on Mar 11,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

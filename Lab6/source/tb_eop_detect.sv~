@@ -1,0 +1,41 @@
+// $ID: mg 147$
+// File name: tb_eop_detect$  
+// Author: Rishab Verma $
+// Lab Section: Friday 11 30$
+// Description: $
+
+
+module tb_eop_detect
+(
+
+);
+
+reg tb_dplus, tb_dminus, tb_eop;
+//call eop_detect
+eop_detect DUT
+(
+	.d_plus(tb_dplus),
+	.d_minus(tb_dminus),
+	.eop(tb_eop)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

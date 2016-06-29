@@ -1,0 +1,964 @@
+`timescale 1ns / 10ps
+
+module tb_usb_receiver();
+
+	// Define local parameters used by the test bench
+	localparam SIZE = 4;
+	localparam CLK_PERIOD = 10.4;
+	localparam DELAY = 1;
+	
+	// Declare DUT portmap signals
+	integer	testcase;
+	reg tb_clk;
+	reg tb_n_rst;
+	reg tb_d_plus;
+	reg tb_d_minus;
+	reg tb_r_enable;
+	reg [7:0] tb_r_data;
+	reg tb_empty;
+	reg tb_full;
+	reg tb_rcving;
+	reg tb_r_error;
+	
+	// Clock generation block
+	always
+	begin
+		tb_clk = 1'b0;
+		#(CLK_PERIOD/2.0);
+		tb_clk = 1'b1;
+		#(CLK_PERIOD/2.0);
+	end
+	
+	// DUT Port map
+	usb_receiver DUT(.clk(tb_clk), .n_rst(tb_n_rst), .d_plus(tb_d_plus), .d_minus(tb_d_minus), .r_enable(tb_r_enable), .r_data(tb_r_data), .empty(tb_empty), .full(tb_full), .rcving(tb_rcving), .r_error(tb_r_error));
+	
+	// Test bench main process
+	initial
+	begin
+
+		testcase = 1;
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		tb_n_rst = 0;
+		tb_r_enable = 0;
+
+		tb_n_rst = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		tb_n_rst = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+//	-----	-----	-----	----- 	SYNC BYTE STARTS -----	-----	-----	-----
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+//	-----	-----	-----	----- 	ACTUAL BYTE STARTS -----	-----	-----	-----
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 1;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+//	-----	-----	-----	----- 	EOP	 -----	-----	-----	-----
+
+		tb_d_plus = 0;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 0;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+		tb_d_plus = 1;
+		tb_d_minus = 0;
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+		@( negedge tb_clk );
+
+
+	end
+endmodule
+
+
+/*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*//*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+*/
+
+   
