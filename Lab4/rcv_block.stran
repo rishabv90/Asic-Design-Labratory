@@ -1,0 +1,71 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -voptargs="+acc" -i -t ps source_work.tb_rcv_block 
+# Start time: 19:37:54 on Mar 07,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_rcv_block(fast)
+# Loading work.rcv_block(fast)
+# Loading work.sr_9bit(fast)
+# Loading work.flex_stp_sr(fast)
+# Loading work.start_bit_det(fast)
+# Loading work.stop_bit_chk(fast)
+# Loading work.timer(fast)
+# Loading work.flex_counter(fast)
+# Loading work.rcu(fast)
+# Loading work.rx_data_buff(fast)
+run 200 ns
+# ** Error: Rx data buffer input load_buffer is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 90
+# ** Error: Rx data buffer input packet_data[          0] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          1] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          2] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          3] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          4] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          5] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          6] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          7] is not a logic '1' or '0'
+#    Time: 0 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input load_buffer is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 90
+# ** Error: Rx data buffer input packet_data[          0] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          1] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          2] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          3] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          4] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          5] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          6] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Error: Rx data buffer input packet_data[          7] is not a logic '1' or '0'
+#    Time: 100 ps  Scope: tb_rcv_block.DUT.RX_DATA_BUFFER File: source/rx_data_buff.sv Line: 100
+# ** Info: Test case 0: Test data correctly received
+#    Time: 8750 ps  Scope: tb_rcv_block.check_outputs File: source/tb_rcv_block.sv Line: 118
+# ** Info: Test case 0: DUT correctly shows no framing error
+#    Time: 8750 ps  Scope: tb_rcv_block.check_outputs File: source/tb_rcv_block.sv Line: 124
+# ** Info: Test case 0: DUT correctly asserted the data ready flag
+#    Time: 8750 ps  Scope: tb_rcv_block.check_outputs File: source/tb_rcv_block.sv Line: 130
+# ** Info: Test case 0: DUT correctly shows no overrun error
+#    Time: 8750 ps  Scope: tb_rcv_block.check_outputs File: source/tb_rcv_block.sv Line: 138
+# End time: 19:38:17 on Mar 07,2016, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 0

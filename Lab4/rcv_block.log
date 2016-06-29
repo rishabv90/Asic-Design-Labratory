@@ -1,0 +1,344 @@
+Synthesizing design: rcv_block.sv
+dc_shell-t -x "source -echo do_mapping.tcl"
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+               Version K-2015.06-SP1 for linux64 - Jul 21, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ecegrid/a/mg147/.synopsys_dv_prefs.tcl
+# Step 1:  Read in the source file
+analyze -format sverilog -lib WORK {flex_counter.sv rcu.sv rx_data_buff.sv sr_9bit.sv start_bit_det.sv stop_bit_chk.sv flex_stp_sr.sv timer.sv rcv_block.sv}
+Running PRESTO HDLC
+Compiling source file ./source/flex_counter.sv
+Compiling source file ./source/rcu.sv
+Compiling source file ./source/rx_data_buff.sv
+Warning:  ./source/rx_data_buff.sv:80: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/rx_data_buff.sv:84: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/rx_data_buff.sv:88: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/rx_data_buff.sv:92: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/rx_data_buff.sv:98: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file ./source/sr_9bit.sv
+Compiling source file ./source/start_bit_det.sv
+Warning:  ./source/start_bit_det.sv:47: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/start_bit_det.sv:51: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/start_bit_det.sv:55: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file ./source/stop_bit_chk.sv
+Warning:  ./source/start_bit_det.sv:45: delay controls are ignored for synthesis. (VER-176)
+Warning:  ./source/stop_bit_chk.sv:65: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/stop_bit_chk.sv:69: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/stop_bit_chk.sv:73: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/stop_bit_chk.sv:77: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/stop_bit_chk.sv:81: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file ./source/flex_stp_sr.sv
+Warning:  ./source/stop_bit_chk.sv:63: delay controls are ignored for synthesis. (VER-176)
+Compiling source file ./source/timer.sv
+Compiling source file ./source/rcv_block.sv
+Presto compilation completed successfully.
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/dw_foundation.sldb'
+elaborate rcv_block -lib WORK
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/gtech.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'rcv_block'.
+Information: Building the design 'sr_9bit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'start_bit_det'. (HDL-193)
+
+Inferred memory devices in process
+	in routine start_bit_det line 23 in file
+		'./source/start_bit_det.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   sync_phase_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   old_sample_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   new_sample_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Warning:  ./source/start_bit_det.sv:43: Netlist for always block is empty. (ELAB-985)
+Presto compilation completed successfully.
+Information: Building the design 'stop_bit_chk'. (HDL-193)
+
+Inferred memory devices in process
+	in routine stop_bit_chk line 23 in file
+		'./source/stop_bit_chk.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  framing_error_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  ./source/stop_bit_chk.sv:61: Netlist for always block is empty. (ELAB-985)
+Presto compilation completed successfully.
+Information: Building the design 'timer'. (HDL-193)
+
+Inferred memory devices in process
+	in routine timer line 50 in file
+		'./source/timer.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| delayed_enable_timer_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|        state1_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'rcu'. (HDL-193)
+
+Statistics for case statements in always block at line 34 in file
+	'./source/rcu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            38            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine rcu line 24 in file
+		'./source/rcu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     current_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'rx_data_buff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine rx_data_buff line 24 in file
+		'./source/rx_data_buff.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  overrun_error_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     rx_data_reg     | Flip-flop |   8   |  Y  | N  | N  | Y  | N  | N  | N  |
+|   data_ready_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  ./source/rx_data_buff.sv:78: Netlist for always block is empty. (ELAB-985)
+Presto compilation completed successfully.
+Information: Building the design 'flex_stp_sr' instantiated from design 'sr_9bit' with
+	the parameters "9,0". (HDL-193)
+
+Inferred memory devices in process
+	in routine flex_stp_sr_NUM_BITS9_SHIFT_MSB0 line 25 in file
+		'./source/flex_stp_sr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  parallel_out_reg   | Flip-flop |   9   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'flex_counter' instantiated from design 'timer' with
+	the parameters "4". (HDL-193)
+
+Inferred memory devices in process
+	in routine flex_counter_NUM_CNT_BITS4 line 34 in file
+		'./source/flex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_flag_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     current_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+uniquify
+Information: Uniquified 2 instances of design 'flex_counter_NUM_CNT_BITS4'. (OPT-1056)
+# Step 2: Set design constraints
+# Uncomment below to set timing, area, power, etc. constraints
+# set_max_delay <delay> -from "<input>" -to "<output>"
+# set_max_area <area>
+# set_max_total_power <power> mW
+# Step 3: Compile the design
+compile -map_effort medium
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.1 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.1 |     *     |
+============================================================================
+
+
+Information: There are 23 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'rx_data_buff'
+  Processing 'rcu'
+  Processing 'flex_counter_NUM_CNT_BITS4_0'
+  Processing 'timer'
+  Processing 'stop_bit_chk'
+  Processing 'start_bit_det'
+  Processing 'flex_stp_sr_NUM_BITS9_SHIFT_MSB0'
+  Processing 'sr_9bit'
+  Processing 'rcv_block'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'rcv_block' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'flex_counter_NUM_CNT_BITS4_0_DW01_cmp6_0'
+  Processing 'flex_counter_NUM_CNT_BITS4_0_DW01_inc_0'
+  Processing 'flex_counter_NUM_CNT_BITS4_1_DW01_cmp6_0'
+  Processing 'flex_counter_NUM_CNT_BITS4_1_DW01_inc_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'flex_counter_NUM_CNT_BITS4_0'
+  Mapping 'flex_counter_NUM_CNT_BITS4_0'
+  Structuring 'flex_counter_NUM_CNT_BITS4_1'
+  Mapping 'flex_counter_NUM_CNT_BITS4_1'
+  Structuring 'flex_stp_sr_NUM_BITS9_SHIFT_MSB0'
+  Mapping 'flex_stp_sr_NUM_BITS9_SHIFT_MSB0'
+  Structuring 'rx_data_buff'
+  Mapping 'rx_data_buff'
+  Structuring 'rcu'
+  Mapping 'rcu'
+  Structuring 'stop_bit_chk'
+  Mapping 'stop_bit_chk'
+  Structuring 'start_bit_det'
+  Mapping 'start_bit_det'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+    0:00:03  104481.0      0.00       0.0       0.0                          
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+# Step 4: Output reports
+report_timing -path full -delay max -max_paths 1 -nworst 1 > reports/rcv_block.rep
+report_area >> reports/rcv_block.rep
+report_power -hier >> reports/rcv_block.rep
+# Step 5: Output final VHDL and Verilog files
+write_file -format verilog -hierarchy -output "mapped/rcv_block.v"
+Writing verilog file '/home/ecegrid/a/mg147/ece337/Lab4/mapped/rcv_block.v'.
+echo "\nScript Done\n"
+
+Script Done
+
+echo "\nChecking Design\n"
+
+Checking Design
+
+check_design
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP1
+Date:        Sat Feb 13 19:42:06 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              13
+    Connected to power or ground (LINT-32)                          8
+    Nets connected to multiple pins on same cell (LINT-33)          5
+--------------------------------------------------------------------------------
+
+Warning: In design 'timer', a pin on submodule 'count_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'timer', a pin on submodule 'count_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'timer', a pin on submodule 'count_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 1. 
+Warning: In design 'timer', a pin on submodule 'count_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'timer', a pin on submodule 'count_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'timer', a pin on submodule 'count_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'timer', a pin on submodule 'count_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'timer', a pin on submodule 'count_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 1. 
+Warning: In design 'timer', the same net is connected to more than one pin on submodule 'count_10'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[3]', 'rollover_val[1]''.
+Warning: In design 'timer', the same net is connected to more than one pin on submodule 'count_10'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[0]''.
+Warning: In design 'timer', the same net is connected to more than one pin on submodule 'count_9'. (LINT-33)
+   Net 'packet_done' is connected to pins 'clear', 'rollover_flag''.
+Warning: In design 'timer', the same net is connected to more than one pin on submodule 'count_9'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[3]', 'rollover_val[0]''.
+Warning: In design 'timer', the same net is connected to more than one pin on submodule 'count_9'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[1]''.
+quit
+
+Thank you...
+Done
+
+

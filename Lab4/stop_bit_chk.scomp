@@ -1,0 +1,9 @@
+QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+Start time: 19:13:20 on Feb 13,2016
+vlog -sv -work source_work source/stop_bit_chk.sv 
+-- Compiling module stop_bit_chk
+
+Top level modules:
+	stop_bit_chk
+End time: 19:13:21 on Feb 13,2016, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

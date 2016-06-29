@@ -1,0 +1,18 @@
+QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+Start time: 19:42:11 on Feb 13,2016
+vlog -sv -work mapped_work mapped/rcv_block.v 
+-- Compiling module flex_stp_sr_NUM_BITS9_SHIFT_MSB0
+-- Compiling module sr_9bit
+-- Compiling module start_bit_det
+-- Compiling module stop_bit_chk
+-- Compiling module flex_counter_NUM_CNT_BITS4_1
+-- Compiling module flex_counter_NUM_CNT_BITS4_0
+-- Compiling module timer
+-- Compiling module rcu
+-- Compiling module rx_data_buff
+-- Compiling module rcv_block
+
+Top level modules:
+	rcv_block
+End time: 19:42:11 on Feb 13,2016, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

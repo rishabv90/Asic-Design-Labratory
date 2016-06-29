@@ -1,0 +1,9 @@
+QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+Start time: 19:36:41 on Mar 07,2016
+vlog -sv -work source_work source/flex_stp_sr.sv 
+-- Compiling module flex_stp_sr
+
+Top level modules:
+	flex_stp_sr
+End time: 19:36:41 on Mar 07,2016, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
