@@ -1,0 +1,20 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab4/source/tb_rcu.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:06:19 on Feb 13,2016
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg147/ece337/Lab4/source/tb_rcu.sv 
+# -- Compiling module tb_rcu
+# 
+# Top level modules:
+# 	tb_rcu
+# End time: 19:06:19 on Feb 13,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

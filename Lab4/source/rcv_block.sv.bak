@@ -1,0 +1,387 @@
+// $ID: $
+// File name: rcv_block.sv$  
+// Author: Rishab Verma mg147$
+// Lab Section: Friday 11 30 am $
+// Description: Reciever Block $
+
+module rcv_block
+(
+	input wire clk,
+	input wire n_rst,
+	input wire serial_in,
+	input wire data_read,
+	output reg [7:0] rx_data,
+	output reg data_ready,
+	output reg overrun_error,
+	output reg framing_error
+	
+);
+	reg shift_strobe;
+	reg [7:0]packet_data;
+	reg stop_bit;
+	reg load_buffer;
+	reg sbc_enable;
+	reg sbc_clear;
+	reg enable_timer;
+	reg packet_done;
+	reg start_bit_detected;
+	
+	sr_9bit SHIFT_REG_9BITs 
+	(
+		.clk (clk),
+		.n_rst (n_rst),
+		.shift_strobe (shift_strobe),
+		.serial_in (serial_in),
+		.packet_data (packet_data),
+		.stop_bit (stop_bit)
+	);
+
+	start_bit_det DETECT_START_BIT
+	(
+		.clk (clk),
+		.n_rst (n_rst),
+		.serial_in (serial_in),
+		.start_bit_detected (start_bit_detected)	
+	);
+
+	stop_bit_chk CHECK_STOP_BIT
+	(
+		.clk          (clk),
+		.n_rst        (n_rst),
+		.sbc_clear    (sbc_clear),
+		.sbc_enable   (sbc_enable),
+		.stop_bit     (stop_bit),
+		.framing_error(framing_error)
+	);
+
+	timer TIMER 
+	(
+		.clk         (clk),
+		.n_rst       (n_rst),
+		.enable_timer(enable_timer),
+		.shift_strobe(shift_strobe),
+		.packet_done (packet_done)
+	);
+
+	rcu RUC 
+	(
+		.clk    (clk),
+		.n_rst  (n_rst),
+		.start_bit_detected (start_bit_detected),
+		.packet_done   (packet_done),
+		.framing_error   (framing_error),
+		.sbc_clear     (sbc_clear),
+		.sbc_enable   (sbc_enable),
+		.load_buffer   (load_buffer),
+		.enable_timer  (enable_timer)
+	);
+
+	rx_data_buff RX_DATA_BUFFER
+	(
+		.clk          (clk),
+		.n_rst        (n_rst),
+		.load_buffer  (load_buffer),
+		.packet_data  (packet_data),
+		.data_read    (data_read),
+		.rx_data      (rx_data),
+		.data_ready   (data_ready),
+		.overrun_error(overrun_error)
+	);
+
+
+endmodule
+
+
+/*
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+`timescale 1ns /100ps
+
+module adder_1bit
+(
+	input wire a,
+	input wire b,
+	input wire carry_in,
+	
+	output reg sum,
+	output reg carry_out
+);
+ 
+always @ (a,b, carry_in)
+   begin
+      assert(( a == 1'b1) || (a == 1'b0))
+      else $error("Input 'a' of component is not a digital logic value");
+
+      assert((b == 1'b1) || (b == 1'b0))
+      else $error("Input 'b' of component is not a digital logic value");
+
+      assert((carry_in == 1'b1) || (carry_in == 1'b0))
+      else $error("Input 'carry_in' of component is not a digital logic value");
+	
+   end
+
+
+
+  assign sum = carry_in ^ (a ^ b);
+  assign carry_out = ((! carry_in) & b & a) | (carry_in & (b | a));
+
+
+   
+   always @ (a, b, carry_in)
+   begin
+     #(2) assert (((a+b+carry_in)%2) == sum)
+       else $error("Output 's' of first 1 bit adder is not correct");
+   end
+	
+
+endmodule
+
+*/
+
+// $Id: $
+// File name:   $
+// Created:     $
+// Author:      $
+// Description: $
+/*
+module sync
+(
+
+	input wire clk,
+	input wire n_rst,
+	input wire async_in,
+	output reg sync_out
+
+);
+
+	reg signal1;
+	reg signal2;
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync1
+		if(1'b0 == n_rst)
+		begin
+			signal1 <= 0;
+		end
+		else
+		begin
+			signal1 <= async_in;
+		end
+	end
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync2
+		if(1'b0 == n_rst)
+		begin
+			signal2 <= 0;
+		end
+		else
+		begin
+			if( 1'b1 == signal1 ) 
+			begin
+				signal2 <= signal1;
+			end
+			else
+			begin
+				signal2 <= 0;
+			end
+		end	
+	end
+	assign sync_out = signal2;
+
+
+endmodule*/// $Id: $
+// File name:   $
+// Created:     $
+// Author:      $
+// Description: $
+/*
+module sync
+(
+
+	input wire clk,
+	input wire n_rst,
+	input wire async_in,
+	output reg sync_out
+
+);
+
+	reg signal1;
+	reg signal2;
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync1
+		if(1'b0 == n_rst)
+		begin
+			signal1 <= 0;
+		end
+		else
+		begin
+			signal1 <= async_in;
+		end
+	end
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync2
+		if(1'b0 == n_rst)
+		begin
+			signal2 <= 0;
+		end
+		else
+		begin
+			if( 1'b1 == signal1 ) 
+			begin
+				signal2 <= signal1;
+			end
+			else
+			begin
+				signal2 <= 0;
+			end
+		end	
+	end
+	assign sync_out = signal2;
+
+
+endmodule*/// $Id: $
+// File name:   $
+// Created:     $
+// Author:      $
+// Description: $
+/*
+module sync
+(
+
+	input wire clk,
+	input wire n_rst,
+	input wire async_in,
+	output reg sync_out
+
+);
+
+	reg signal1;
+	reg signal2;
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync1
+		if(1'b0 == n_rst)
+		begin
+			signal1 <= 0;
+		end
+		else
+		begin
+			signal1 <= async_in;
+		end
+	end
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync2
+		if(1'b0 == n_rst)
+		begin
+			signal2 <= 0;
+		end
+		else
+		begin
+			if( 1'b1 == signal1 ) 
+			begin
+				signal2 <= signal1;
+			end
+			else
+			begin
+				signal2 <= 0;
+			end
+		end	
+	end
+	assign sync_out = signal2;
+
+
+endmodule*/// $Id: $
+// File name:   $
+// Created:     $
+// Author:      $
+// Description: $
+/*
+module sync
+(
+
+	input wire clk,
+	input wire n_rst,
+	input wire async_in,
+	output reg sync_out
+
+);
+
+	reg signal1;
+	reg signal2;
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync1
+		if(1'b0 == n_rst)
+		begin
+			signal1 <= 0;
+		end
+		else
+		begin
+			signal1 <= async_in;
+		end
+	end
+
+	always_ff @ (posedge clk, negedge n_rst)
+	begin : sync2
+		if(1'b0 == n_rst)
+		begin
+			signal2 <= 0;
+		end
+		else
+		begin
+			if( 1'b1 == signal1 ) 
+			begin
+				signal2 <= signal1;
+			end
+			else
+			begin
+				signal2 <= 0;
+			end
+		end	
+	end
+	assign sync_out = signal2;
+
+
+endmodule*/

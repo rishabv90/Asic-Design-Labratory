@@ -1,0 +1,86 @@
+// $ID: $
+// File name: rx_data_buff.sv$  
+// Author: Rishab Verma mg147$
+// Lab Section: Friday 11 30 am $
+// Description:  8 bit data buffer$
+
+`timescale 1ns / 10ps
+
+module rx_data_buff
+(
+	input  wire clk,
+	input  wire n_rst,
+	input  wire load_buffer,
+	input  wire [7:0] packet_data,
+	input  wire data_read,
+	output reg  [7:0] rx_data,
+	output reg  data_ready,
+	output reg  overrun_error
+);
+	
+reg error_nextorun;
+reg ready_nextdata;
+integer	i;
+reg [7:0] next_data;
+
+
+	
+always @ (negedge n_rst, posedge clk)
+begin:	REGISTER_LOGIC
+	
+	if(1'b0 == n_rst)
+	begin
+		rx_data <= 8'b11111111;
+		data_ready <= 1'b0;
+		overrun_error <= 1'b0;
+	end
+	
+	else 
+	begin
+		rx_data <= next_data;
+		data_ready <= ready_nextdata;
+		overrun_error <= error_nextorun;	
+		
+	end	 
+end
+
+always @ (rx_data, data_ready, overrun_error, packet_data, load_buffer, data_read)
+begin : NEXT_LOGIC
+	next_data  <=rx_data;
+	ready_nextdata <= data_ready;
+	error_nextorun <= overrun_error;
+	//loading new data on to the next clockk up edgeeee
+	if(1'b1 == load_buffer)
+		ready_nextdata <= packet_data;
+	//if data has not been loaded and is beign read
+	if(1'b1==load_buffer)
+		ready_nextdata <= 1'b1;
+	//curently loading new data , and current data is not reading 
+	//dealing with overrun error.
+	else if(1'b1 == data_read)
+	begin
+		ready_nextdata = 1'b0;
+	end
+	
+	if((1'b1 ==load_buffer) && (1'b1 == data_ready) && (1'b0==data_read))
+	begin
+		error_nextorun <= 1'b0;
+	end
+end
+
+
+
+//assertion checksss
+
+			
+	
+	
+	
+		
+		
+	
+		
+	
+
+
+	endmodule
